@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>MA 405: Introduction to Linear Algebra</title>
+    <title>MA 523: Advanced Calculus I</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Global stylesheet for GitHub Pages -->
     <link rel="stylesheet" href="/course_syllabi/styles.css" />
@@ -15,25 +15,11 @@
       style="font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.4;"
     >
       <!-- This heading is PRINT-ONLY: appears in PDF/print, hidden on screen -->
-      <h1 class="print-only">MA 405: Introduction to Linear Algebra</h1>
+      <h1 class="print-only">MA 523: Advanced Calculus I</h1>
       <h2>Spring 2026 Course Syllabus</h2>
 
       
-      <!-- SCREEN-ONLY: visible on the web, hidden in PDF/print -->
-      <p class="screen-only">
-        <a href="" target="_blank" rel="noopener">
-          View, download, or print this syllabus as a PDF
-        </a>
-      </p>
-      
 
-      
-      <!-- PRINT-ONLY: shows up in the PDF/printout -->
-      <p class="print-only">
-        <a href="">
-          Click here for an HTML version of this syllabus.
-        </a>
-      </p>
       
 
       
@@ -45,7 +31,9 @@
 <li><a href="#learning-objectives">Learning Objectives</a></li>
 <li><a href="#course-structure">Course Structure</a></li>
 <li><a href="#communication-and-getting-help">Communication and Getting Help</a></li>
-<li><a href="#textbook-and-other-resources">Textbook and other resources</a></li>
+<li><a href="#textbook">Textbook</a></li>
+<li><a href="#latex-resources">LaTeX resources</a></li>
+<li><a href="#matlab-resources">MATLAB Resources</a></li>
 <li><a href="#homework">Homework</a></li>
 <li><a href="#test-information">Test Information</a></li>
 <li><a href="#classroom-expectations">Classroom Expectations</a></li>
@@ -84,142 +72,95 @@
         <hr />
 
         <h3 id="course-description">Course Description</h3>
-<p>(3 credit hours) This course offers a rigorous treatment of linear algebra, including systems of linear equations, matrices, determinants, abstract vector spaces, bases, linear independence, spanning sets, linear transformations, eigenvalues and eigenvectors, similarity, inner product spaces, orthogonality and orthogonal bases, factorization of matrices. Compared with MA 305 Introductory Linear Algebra, more emphasis is placed on theory and proofs. MA 225 is recommended as a prerequisite. Credit is not allowed for both MA 305 and MA 405.</p>
-<p>Prerequisite: MA 241 (MA 225 recommended); Corequisite: MA 341 is recommended.</p>
+<p>(3 credit hours) Vector spaces, linear transformations and matrices, orthogonality, orthogonal transformations with emphasis on rotations and reflections, matrix norms, projectors, least squares, generalized inverses, definite matrices, singular values.</p>
+<p>Prerequisite: MA 405</p>
 <hr />
 <h3 id="learning-objectives">Learning Objectives</h3>
-<p>Upon successful completion of this course, students will be able to:</p>
-<ol>
-<li>
-<p><strong>Use Mathematical Notation and Terminology</strong>
-The students will demonstrate mastery in using the mathematical notation and terminology of linear algebra. Students will read, interpret, and use the vocabulary, symbolism and basic definitions.</p>
-</li>
-<li>
-<p><strong>Understand and Describe the Fundamental Concepts of Linear Algebra</strong>
-Students will identify and apply the theorems about abstract vector spaces and linear transformations; will gain a clear understanding of the basic concepts of linear algebra, such as linear independence of vectors, spanning sets, basis, similarity, eigenvalues and eigenvectors.</p>
-</li>
-<li>
-<p><strong>Identify and Utilize Linear Algebra Tools</strong>
-The students will be able to apply course material along with techniques and procedures covered in this course to solve problems. Students will master techniques for solving linear systems by various matrix methods, compute the determinant and the inverse of a square matrix, compute various factorizations of matrices, apply the Gram-Schmidt process, calculate and analyze the characteristic equation of a matrix to determine its eigenvalues and eigenvectors. Moreover, students will apply properties and theorems about vector spaces to specific mathematical structures that satisfy the vector space axioms, will analyze the differences and similarities between spanning sets, bases, and orthogonal bases and will use the knowledge gained in this course to determine appropriate methods of proof for specific problems.</p>
-</li>
-<li>
-<p><strong>Develop Cognitive Skills</strong>
-Students will demonstrate the ability to reason with abstract linear algebra concepts, to read and comprehend mathematical arguments utilizing direct and indirect proof, case analysis, and mathematical induction. Students will develop familiarity with axiomatic approaches in mathematics through the study of vector spaces and linear transformations. They will acquire a level of proficiency in manipulating linear algebra concepts, in analyzing and evaluating their applicability in their future studies, including graduate work, in academic areas requiring linear algebra as a prerequisite for work in occupational fields requiring a background in linear algebra.</p>
-</li>
-</ol>
+<p>The course will focus on linear algebraic foundations of Data Science Core concepts and topics. Upon successful completion of this course, students should come away with an appreciation of mathematics, and its importance in data science, including:</p>
+<ul>
+<li>Core concepts: Matrix factorizations, sparse matrix methods, algorithmic complexity, probability (for the analysis of algorithms).</li>
+<li>Model fitting: least squares/regression, regularization, kernel methods.</li>
+<li>Dimensionality reduction: SVD/PCA, low-rank approximations, NMF.</li>
+<li>Probabilistic methods: Sampling, Bayesian inference, Monte Carlo Methods.</li>
+<li>Graphs: Laplacians, spectral methods, graph partitioning</li>
+<li>Neural networks</li>
+<li>Applications: Classification, Clustering (k-means), Ranking (PageRank), Recommender systems.</li>
+<li>Special Topics: Random projections, random number generation, MCMC.</li>
+</ul>
 <hr />
 <h3 id="course-structure">Course Structure</h3>
 <h4 id="lecture-materials">Lecture Materials</h4>
-<p>Linear algebra provides one of the cornerstones for much of modern mathematics and has important applications in physics, engineering, and economics. The main purpose of this course is to introduce the basic concepts from linear algebra, explain the underlying theory, the computational techniques, and study how these concepts and results can be productively used in other areas of mathematics and physical sciences, especially in applied mathematics where multivariable models are involved. Among the topics covered in this course will be: solving systems of linear equations using Gauss elimination, row echelon form, determinants, vector spaces, linear independence, bases, dimension, linear transformations, orthogonality, eigenvalues, and reduction of matrices to diagonal forms.</p>
-<p>The subject involves a mixture of both the practical and the theoretical and will provide in particular a good introduction to mathematical proofs. For this reason, the course is considered to be a difficult one in undergraduate mathematics, and the student should be prepared to invest a considerable amount of time in understanding the class material and doing homework.</p>
-<p>Course lectures were prepared and recorded specifically for this section of MA 405 by Dr. Alina Duca. They are hosted on Panopto, and students should access them through the course Moodle page. Note that Safari sometimes does not allow this, whereas Chrome and Firefox are more user friendly.</p>
-<p>In this online asynchronous course, the video content is designed to approximate the 150 minutes of weekly contact time typical of a regular semester course. However, please note that the duration of video content may vary from week to week. Some weeks may feature more than 150 minutes of videos, while others may have less.</p>
-<p>You may shift your viewing schedule each week to accommodate your own schedule. However, please keep in mind that this online, distance-education course is fast-paced, and it may become difficult to catch up if you fall behind.</p>
-<h4 id="live-sessions">Live sessions</h4>
-<p>TBD.</p>
+<p>All course learning materials and resources are housed in our course Moodle. The video lectures were pre-recorded specifically for this course by Dr. Ilse Ipsen and are available on Moodle, where there are accompanying notes. The lectures should be viewed according to the schedule on Moodle. You may shift your viewing schedule each week to accommodate your own schedule; however, please keep in mind that this online, distance-education course is fast-paced, and it may become difficult to catch up if you fall behind.</p>
+<p>Each module of the course will provide:</p>
+<ul>
+<li>video lectures</li>
+<li>corresponding notes</li>
+<li>homework assignments</li>
+</ul>
 <hr />
 <h3 id="communication-and-getting-help">Communication and Getting Help</h3>
 <h4 id="forum">Forum</h4>
-<p>We will use the Yellowdig platform for our course community and discussions. Ideally, math questions should be asked in office hours or on Yellowdig. In general, I will not answer math questions sent by email-if you have a math question you would like to send to me, please post it on Yellowdig. I will monitor and respond to questions on Yellowdig.</p>
-<p>As you create posts and make comments, and as other students react to or comment on your posts, you will automatically receive participation points. The points you earn in Yellowdig are passed to the Moodle gradebook for your discussion credit.</p>
-<p>To get 100% for your recitation score, you will need to accumulate points each week over the course of the semester. Here is how it works:</p>
-<ul>
-<li>There are "weekly periods" in the course. The forum will open on the first day of class, which will serve as the first "week". Holiday weeks (Fall Break, Thanksgiving Break) are merged with neighboring weeks, and the week of final exams is merged with the last week of class.</li>
-<li>To stay on pace, you should aim to earn 1000 points for each weekly period. However, you can actually earn up to 1350 points per week. Therefore, you can create a buffer in case you fall short in any week.</li>
-<li>At 11:59 pm at the end of each weekly period, the weekly points will reset. You will have a new period in which to earn up to 1350/1000. You can keep posting even after you have reached the weekly maximum; you just will stop earning additional credit toward your grade until the next reset.</li>
-<li>You may exceed the maximum semester point total in Yellowdig, but the maximum score in Moodle is 100%.</li>
-</ul>
-<p>To start, please use the "Introductions/Community" Topic and share a bit about who you are and what you are hoping to get out of taking this class. Please feel welcome to share pictures, videos, or interesting links about you and your accomplishments!</p>
+<p>The course will use a <strong>Moodle Discussion Forum</strong> for asking and answering questions regarding the homework, exam preparation, and logistics. If you have a question, then one of your classmates may have already asked it on the forum; if not, you can make a new post. Students can answer each other’s questions, and instructors will monitor the forum regularly.</p>
 <h4 id="email">Email</h4>
-<p>Email may be used for confidential and private discussions about grades, scheduling office hours, etc. In general, I may not respond to email outside of business hours (M-F, 9am-5pm). It may take 24-72 hours for me to respond to an email. Please include MA 405 in the subject of the email. Math questions are best asked in office hours or on our on forum, not by email.</p>
-<h4 id="tutoring-centers">Tutoring Centers</h4>
-<p>During the regular school year, there is free help available on campus for MA 405. See the following links:</p>
-<ul>
-<li><a href="https://math.sciences.ncsu.edu/undergraduate/courses-faq/math-multimedia-center/">Math Tutoring Center (MTC)</a> in SAS 2105. This room has many computers available so that you can work on your assignments. The room is a low-stress environment: you may work quietly in the room without engaging a tutor, or you may ask questions of the graduate tutors when they are available.</li>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/drop-in-tutoring/">Academic Success Center (ASC)</a> in D.H. Hill Library has a few options:<ul>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/drop-in-tutoring/">ASC Drop-In Tutoring</a></li>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/appointment-tutoring/">ASC Appointment Tutoring</a></li>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/weekly-group-tutoring/">ASC Weekly Group Tutoring</a></li>
-</ul>
-</li>
-</ul>
-<p>For Drop-In Tutoring hours, notice the MTC is open during the day, and the ASC is open in the evening.</p>
+<p>Email may be used for confidential and private discussions about grades, scheduling office hours, etc. In general, I may not respond to email outside of business hours (M-F, 9am-5pm). It may take 24-72 hours for me to respond to an email. Please include MA 523 in the subject of the email. Math questions are best asked in office hours or on our on forum, not by email.</p>
 <hr />
-<h3 id="textbook-and-other-resources">Textbook and other resources</h3>
-<p>There is no required textbook for this course. However, several textbooks available through the NC State Libraries are good resources, and specific chapters will be recommended for each course unit. You can also find links to these resources on Moodle.</p>
-<ol>
-<li>
-<p><strong>Most recommended:</strong> Axler, S. (2015). Linear Algebra Done Right. Springer. NC State Libraries catalog record for this title: https://catalog.lib.ncsu.edu/catalog/NCSU3313726</p>
-</li>
-<li>
-<p>Olver, P. J., &amp; Shakiban, C. (2018). Applied Linear Algebra. Undergraduate Texts in Mathematics. Springer. NC State Libraries catalog record for this title: https://catalog.lib.ncsu.edu/catalog/NCSU4441965</p>
-</li>
-<li>
-<p>Nair, M. T., &amp; Singh, A. (2018). Linear Algebra. Springer. NC State Libraries catalog record for this title: https://catalog.lib.ncsu.edu/catalog/NCSU4443257</p>
-</li>
-<li>
-<p>Said‑Houari, B. (2017). Linear Algebra. Compact Textbooks in Mathematics. Birkhäuser. NC State Libraries catalog record for this title: https://catalog.lib.ncsu.edu/catalog/NCSU4062886</p>
-</li>
-<li>
-<p>Chahal, J. S. (2019). Fundamentals of Linear Algebra. CRC Press, Taylor &amp; Francis Group. NC State Libraries catalog record for this title: https://catalog.lib.ncsu.edu/catalog/NCSU4847033</p>
-</li>
-</ol>
-<h4 id="latex-resources">LaTeX Resources</h4>
+<h3 id="textbook">Textbook</h3>
+<p><strong>Linear Algebra e-books in the NC State library</strong></p>
 <ul>
-<li><a href="https://moodle-courses2021.wolfware.ncsu.edu/draftfile.php/10679/user/draft/641831901/Intro_to_LaTeX_MA_405.pdf">LaTeX Intro Document — PDF</a> — PDF (opens in a new tab).</li>
-<li>
-<p>LaTeX Intro Document source files:</p>
+<li>I.C.F. Ipsen: <a href="https://catalog.lib.ncsu.edu/record/NCSU2514760">Numerical Matrix Analysis</a></li>
+<li>Åke Björck: <a href="https://catalog.lib.ncsu.edu/record/NCSU3309058">Numerical Methods in Matrix Computations</a></li>
+<li>Roger A. Horn and Charles R. Johnson: <a href="https://catalog.lib.ncsu.edu/record/NCSU2728818">Matrix Analysis, 2.edition</a></li>
+<li>David S. Watkins: <a href="https://catalog.lib.ncsu.edu/record/NCSU2664449">Fundamentals of Matrix Computations</a></li>
+<li>P. J. Olver and C. Shakiban: <a href="https://catalog.lib.ncsu.edu/catalog/NCSU4441965"> Applied Linear Algebra</a></li>
+</ul>
+<p><strong>Animations</strong></p>
 <ul>
-<li><a href="https://moodle-courses2021.wolfware.ncsu.edu/draftfile.php/10679/user/draft/641831901/LatexIntro.tex">LaTeX source (.tex)</a> — .tex (opens in a new tab).</li>
-<li><a href="https://moodle-courses2021.wolfware.ncsu.edu/draftfile.php/10679/user/draft/641831901/Intro2LatexMA405.txt">Plain text version (.txt)</a> — .txt (opens in a new tab).</li>
+<li><a href="https://www.youtube.com/watch?v=fNk_zzaMoSs&amp;list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&amp;index=1&amp;t=1s">The essence of linear algebra</a></li>
+<li><a href="https://yizhe-ang.github.io/matrix-explorable//">The Matrix Arcade</a></li>
 </ul>
+<h3 id="latex-resources">LaTeX resources</h3>
+<p>The links below provide learning materials and software for LaTeX. Additional resources are located in Moodle.</p>
+<ul>
+<li><a href="https://catalog.lib.ncsu.edu/record/NCSU2485558">Learning LaTeX — Griffiths &amp; Higham (NCSU library)</a> — Library record for the book "Learning LaTeX".</li>
+<li><a href="https://www.latex-project.org/">LaTeX Project — software and documentation</a> — Official LaTeX distribution and documentation.</li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX">LaTeX Wikibook — comprehensive guide</a> — Community-maintained LaTeX reference and examples.</li>
+<li><a href="https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer">Getting started with LaTeX — primer (Trinity College Dublin)</a> — Introductory tutorial and examples.</li>
+<li><a href="https://miktex.org/">MiKTeX — easy-to-install LaTeX for Windows</a> — Windows installer and documentation for MiKTeX.</li>
+<li><a href="https://docs.moodle.org/38/en/Using_TeX_Notation">Using TeX notation in Moodle forums</a> — Moodle documentation for inserting math with TeX.</li>
+</ul>
+<h3 id="matlab-resources">MATLAB Resources</h3>
+<ul>
+<li>
+<p>Cleve Moler, <a href="https://www.mathworks.com/moler/chapters.html">Numerical Computing with MATLAB</a></p>
 </li>
 <li>
-<p><a href="https://moodle-courses2021.wolfware.ncsu.edu/draftfile.php/10679/user/draft/641831901/Sample_HW_MA_405.pdf">LaTeX Sample HW Format — PDF</a> — PDF (example of homework formatting; opens in a new tab).</p>
+<p><a href="https://www.mathworks.com/help/matlab/getting-started-with-matlab.html">Tutorial 0.1 — Getting Started with MATLAB</a>
+    Short description: introductory tutorial. Ensure any video has captions and a text transcript; ensure screenshots have descriptive alt text.</p>
 </li>
-<li>LaTeX Sample HW source files:<ul>
-<li><a href="https://moodle-courses2021.wolfware.ncsu.edu/draftfile.php/10679/user/draft/641831901/SampleHW405.tex">LaTeX source (.tex)</a> — .tex (opens in a new tab).</li>
-<li><a href="https://moodle-courses2021.wolfware.ncsu.edu/draftfile.php/10679/user/draft/641831901/SampleHWMA405.txt?time=1611122945084">Plain text version (.txt)</a> — .txt (opens in a new tab).</li>
-</ul>
+<li>
+<p><a href="https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted?s_tid=course_mlor_start1">Tutorial 0.2 — MATLAB Onramp course</a></p>
 </li>
-</ul>
-<h4 id="technology-resources">Technology Resources</h4>
-<ul>
-<li><a href="https://docs.moodle.org/38/en/Using_TeX_Notation">Using TeX notation for inserting math formulas in Moodle forums</a> (opens in a new tab)</li>
-<li><a href="https://webwork.maa.org/wiki/Student_Information">Learning with WeBWorK — Student Information</a> (opens in a new tab)</li>
 </ul>
 <hr />
 <h3 id="homework">Homework</h3>
-<p>There are two types of homework in this class: written assignments in Gradescope and computer-based assignments in WebWork. The links to all homework assignments are available in Moodle and grades will appear in the Moodle Gradebook.</p>
-<h4 id="webwork">WebWork</h4>
-<p>Homework assignments are posted in Moodle and completed in WeBWorK (WW), an online homework system linked directly to Moodle. You must access each assignment through Moodle first in order for it to open correctly in WeBWorK. All homework links are provided within the Moodle course page.</p>
-<p>Please feel free to discuss the homework sets in a helpful and productive manner on the course forum.</p>
-<p><em>Your lowest homework grade will be dropped. Use this drop wisely.</em></p>
+<p>There are three types of homework in this class: written assignments submitted via Gradescope, programming projects, and Moodle quizzes (with infinitely many attempts).</p>
+<h4 id="moodle-quizzes">Moodle Quizzes</h4>
+<p>You have infinitely many attempts on quiz questions. You can start a quiz, answer a few questions, close your browser, and resume later on a different device. You do not need to complete the quiz in one sitting. You also do not need to formally “submit” the quiz–Moodle will submit it on your behalf at the deadline. Thus I recommend trying to work through a few problems at a time, as soon as we have covered the relevant material.</p>
 <h4 id="written-assignments">Written Assignments</h4>
 <p>You will need to upload your written or typed work to Gradescope. I will grade each assignment holistically in Gradescope, and you will receive an automated email when the assessments are finished. The due dates for Gradescope assignments are listed on Gradescope and in Moodle.</p>
-<p><em>Your lowest written homework grade will be dropped. Use this drop wisely.</em></p>
+<h4 id="matlab-grader">MATLAB Grader</h4>
+<p>Some homework sets are in MATLAB Grader, or have MATLAB Grader supplements. These MATLAB Grader questions are due by the day of the final exam. As with the Moodle quiz homework sets, you have infinitely many attempts on most of these questions, with instant feedback.</p>
 <hr />
 <h3 id="test-information">Test Information</h3>
+<p>There will be three “midterm” examinations–the final exam is Midterm 3. The exams each test about one third of the course. While they are not written to test earlier material deliberately, as the course progresses some questions will naturally rely on your mastery of earlier topics.</p>
 <h4 id="test-dates">Test Dates</h4>
 <ul>
 <li>Test 1: TBD</li>
 <li>Test 2: TBD</li>
 <li>Final Exam: TBD</li>
 </ul>
-<h4 id="proctors">Proctors</h4>
-<p>All examinations will be proctored through DELTA. You will either take your exam with DELTA, or coordinate remote proctoring with DELTA, according to which situation best describes you:</p>
-<ul>
-<li>If you live less than 50 miles away from Raleigh, NC, then you will take your tests on our campus through the Distance Education Testing Centers. Students should be mindful of closing hours for both Testing Centers, and give themselves plenty of time to complete their exams. For information, please visit <a href="https://testing-services.delta.ncsu.edu/testing-services-on-campus/">DELTA on-campus testing services.</a></li>
-<li>Those students who live more than 50 miles away from Raleigh, NC do not have to take their tests on NCSU campus. They may use a proctor in their town for testing. The proctor must be approved in advance through DELTA (not the instructor). It can take up to 1 week to verify a proctor and set up all needed contact info, so please do this early! Please visit the remote proctor website at <a href="https://testing-services.delta.ncsu.edu/testing-services-remote/">DELTA remote proctoring.</a></li>
-</ul>
-<p><strong>Sign up your preferred time/date now! Time slots fill up fast!</strong></p>
-<p><strong>Note:</strong> the word <em>remote</em> in this context means that you are using a professional testing site (for example, a testing center, a local library, a college, etc.) other than DELTA. Remote testing does not mean testing at home.</p>
 <h4 id="calculators">Calculators</h4>
-<p>You may use scientific calculators on exams. These calculators must not have calculus capabilities (differentiation, integration), CAS (computer algebra system) capabilities, or access to the internet.</p>
-<p>See the Moodle guide Calculator Guidelines for a list of appropriate calculators. If you are on-campus, you may rent a suitable calculator from the NC State Libraries: <a href="https://www.lib.ncsu.edu/devices/calculators">Calculator rentals at NC State Libraries</a>.</p>
-<h4 id="test-format">Test Format</h4>
-<p>Each exam will be a written, in-person exam administered at an approved testing location. You must bring appropriate photo identification and any permitted materials specified in this syllabus and in my course announcements.</p>
-<p>If you take the written exam at DELTA, then you will complete it on an iPad with an Apple Pencil.</p>
+<p>Calculators are not permitted on exams.</p>
 <hr />
 <h3 id="classroom-expectations">Classroom Expectations</h3>
 <ol>
@@ -257,11 +198,10 @@ Students will demonstrate the ability to reason with abstract linear algebra con
 <h3 id="grading">Grading</h3>
 <h4 id="grade-weighting-and-numerical-conversion">Grade Weighting and Numerical Conversion</h4>
 <p>Your grade will be determined by the following breakdown:</p>
-<ul>
-<li>WebWork Homework: 25%</li>
-<li>Tests: 40% total (20% each)</li>
-<li>Final: 35%</li>
-</ul>
+<p>Written Homework, 40%
+Midterm 1, 15%
+Midterm 2, 15%
+Final Exam, 30%</p>
 <p>Grades are tracked in real-time in the Moodle <strong>Gradebook</strong>.</p>
 <h4 id="conversion-from-numerical-grade-to-letter-grade">Conversion from Numerical Grade to Letter Grade</h4>
 <p>A student's numerical average will be converted to a letter grade as follows (do not expect any additional rounding, extra credit, or curves):</p>
@@ -305,26 +245,18 @@ Students will demonstrate the ability to reason with abstract linear algebra con
 <h3 id="course-schedule">Course Schedule</h3>
 <p>The course schedule is tentative and subject to change. Adjustments may be made to accommodate the pace of the class and unforeseen circumstances. All major changes will be announced in class and posted on Moodle.</p>
 <ul>
-<li><a href="https://bmaults.github.io/course_syllabi/MA405-601-calendar.html">Course Calendar (HTML)</a></li>
-<li><a href="https://drive.google.com/file/d/1dMgHCHnhtDa7D-D0QgmSYj6lm2w_U8Bw/view?usp=sharing">Course Calendar (PDF)</a></li>
+<li><a href="https://bmaults.github.io/course_syllabi/MA523-601-calendar.html">Course Calendar (HTML)</a></li>
+<li><a href="https://drive.google.com/file/d/1p-rtzTDl8Q43SJNuLMDBmBo7SvInvfR0/view?usp=sharing">Course Calendar (PDF)</a></li>
 </ul>
 <h4 id="important-dates">Important Dates</h4>
 <p>For holidays and other university closures, please consult <a href="https://studentservices.ncsu.edu/calendars/academic/">the general NC State Academic Calendar.</a></p>
 <p>Your final exam schedule is already determined; find it here: <a href="https://studentservices.ncsu.edu/calendars/exam/">NC State Final Exam Calendar.</a> You are responsible for reviewing your final exam sessions to arrange a suitable time for this course.</p>
 <h4 id="list-of-topics">List of Topics</h4>
-<p>Here are the major topics of MA 405, with the approximate regular-semester time allocated to each:</p>
-<ul>
-<li>Unit 1: Introduction to Vector Spaces (~2 weeks). Major topics include the foundational axioms of vector spaces and subspaces, and the concepts of linear combinations, span, and linear independence</li>
-<li>Unit 2: Linear Systems and Matrices (~2 weeks). Major topics include solving systems of linear equations using Gaussian elimination and matrix operations, as well as understanding matrix invertibility and its properties</li>
-<li>Unit 3: Deeper Dive into Vector Spaces (~2 weeks). Major topics include the concepts of basis and dimension for a vector space, coordinate vectors, and the fundamental subspaces of a matrix like the column and null space</li>
-<li>Unit 4: Linear Transformations (~2 weeks). Major topics include the definition and properties of linear transformations, their associated kernel and range, and their representation as matrices</li>
-<li>Unit 5: Similarity, Eigentheory, and Diagonalization (~2 weeks). Major topics include determinants, similar matrices, the characteristic polynomial, finding eigenvalues and eigenvectors for a matrix, and the process of diagonalization</li>
-<li>Unit 6: Inner Product Spaces (~3 weeks). Major topics include the axioms of inner products, orthogonality, and the application of the Gram-Schmidt process to construct orthonormal bases</li>
-</ul>
+<p>Here are the major topics of MA 523, with the approximate regular-semester time allocated to each:</p>
+<p>TBD</p>
 <hr />
 <h3 id="additional-information">Additional Information</h3>
 <h4 id="student-expenses">Student Expenses</h4>
-<p>There are no expected expenses for this course.</p>
 <h4 id="late-assignments">Late Assignments</h4>
 <p>Generally no late assignments are accepted in this course. Please plan your work carefully and submit assignments by their stated deadlines. Extensions may be occasionally granted by the instructor for extenuating circumstances, which are best documented with <a href="https://osla.dasa.ncsu.edu/absence-verification-process/">NC State Absence Verification.</a></p>
 <p>For longer-term, recurring, or more serious illness or other interruptions to your participation in this class, you should reach out to your instructor as soon as you can.</p>
@@ -382,21 +314,6 @@ Students will demonstrate the ability to reason with abstract linear algebra con
 
 <ul>
 <li>
-<p><a href="https://webwork.wolfware.ncsu.edu/webwork2/">WebWork</a>: We will use WebWork for homework.</p>
-<ul>
-<li><a href="https://webwork.maa.org/wiki/Accessibility_Guide">WebWork Accessibility Guide</a></li>
-<li><a href="https://webwork.maa.org/wiki/WeBWorK:Privacy_Policy">WebWork Privacy Policy</a></li>
-</ul>
-</li>
-<li>
-<p><a href="https://www.yellowdig.co/">Yellowdig</a>: this site hosts our class forum and is a graded component of the course. You will use <strong>Yellowdig</strong> to ask questions regarding the lecture or homework.</p>
-<ul>
-<li><a href="https://help.yellowdig.co/kb/en/article/our-commitment-to-accessibility">Yellowdig Accessibility Statement</a></li>
-<li><a href="https://www.yellowdig.co/privacy">Yellowdig Privacy Policy</a></li>
-<li><a href="https://help.yellowdig.co/kb/en">Yellowdig Help Center</a></li>
-</ul>
-</li>
-<li>
 <p><a href="https://meet.google.com">Google Meet</a>: when needed.</p>
 <ul>
 <li><a href="https://support.google.com/meet/answer/7313544?hl=en">Google Meet Accessibility features</a></li>
@@ -418,6 +335,14 @@ Students will demonstrate the ability to reason with abstract linear algebra con
 <li><a href="https://help.gradescope.com/article/w73ayv69kf-gradescope-accessibility-information-and-resources">Gradescope Accessibility Information</a></li>
 <li><a href="https://www.gradescope.com/privacy">Gradescope Privacy Policy</a></li>
 <li><a href="https://help.gradescope.com/">Gradescope Help Center</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.mathworks.com/">MathWorks</a>: We will use MathWorks MATLAB for programming assignments.</p>
+<ul>
+<li><a href="https://www.mathworks.com/help/matlab/matlab_env/accessibility-in-matlab.html">MATLAB Accessibility Statement</a></li>
+<li><a href="https://www.mathworks.com/company/trust-center/privacy-policy.html">MATLAB Privacy Policy</a></li>
+<li><a href="https://www.mathworks.com/support/contact_us.html">MATLAB Support</a></li>
 </ul>
 </li>
 </ul>
