@@ -5,6 +5,8 @@ Syllabi for online mathematics courses
   - MA 103-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA103-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA103-601-calendar.html)
   - MA 107-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA107-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA107-601-calendar.html)
   - MA 111-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA111-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA111-601-calendar.html)
+  - MA 114-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA114-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA114-601-calendar.html)
+  - MA 131-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA131-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA131-601-calendar.html)
   - MA 132-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA132-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA132-601-calendar.html)
   - MA 141-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA141-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA141-601-calendar.html)
   - MA 241-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA241-601.html)
