@@ -2,10 +2,6 @@
 
 Syllabi for online mathematics courses
 
-# course_syllabi
-
-Syllabi for online mathematics courses.
-
 - MA 103-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA103-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA103-601-calendar-2026-spring.html)
 - MA 107-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA107-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA107-601-calendar-2026-spring.html)
 - MA 111-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA111-601.html), [Calendar](https://bmaults.github.io/course_syllabi/MA111-601-calendar-2026-spring.html)
