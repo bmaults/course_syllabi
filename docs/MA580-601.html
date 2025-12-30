@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>MA 131: Calculus for Life and Management Sciences A</title>
+    <title>MA 580: Numerical Analysis I</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Global stylesheet for GitHub Pages -->
     <link rel="stylesheet" href="/course_syllabi/styles.css" />
@@ -22,14 +22,14 @@
       "
     >
       <!-- This heading is PRINT-ONLY: appears in PDF/print, hidden on screen -->
-      <h1 class="print-only">MA 131: Calculus for Life and Management Sciences A</h1>
+      <h1 class="print-only">MA 580: Numerical Analysis I</h1>
       <h2>Department of Mathematics · NC State University</h2>
       <h2>Spring 2026 Course Syllabus</h2>
 
       
       <!-- SCREEN-ONLY: visible on the web, hidden in PDF/print -->
       <p class="screen-only">
-        <a href="/course_syllabi/MA131-601.pdf" target="_blank" rel="noopener">
+        <a href="/course_syllabi/MA580-601.pdf" target="_blank" rel="noopener">
           View, download, or print this syllabus as a PDF
         </a>
       </p>
@@ -38,7 +38,7 @@
       
       <!-- PRINT-ONLY: shows up in the PDF/printout -->
       <p class="print-only">
-        <a href="/course_syllabi/MA131-601.html">
+        <a href="/course_syllabi/MA580-601.html">
           Click here for an HTML version of this syllabus.
         </a>
       </p>
@@ -53,7 +53,9 @@
 <li><a href="#learning-objectives">Learning Objectives</a></li>
 <li><a href="#course-structure">Course Structure</a></li>
 <li><a href="#communication-and-getting-help">Communication and Getting Help</a></li>
-<li><a href="#textbook-and-webassign">Textbook and WebAssign</a></li>
+<li><a href="#textbook-and-other-resources">Textbook and other resources</a></li>
+<li><a href="#latex-resources_1">LaTeX resources</a></li>
+<li><a href="#homework">Homework</a></li>
 <li><a href="#test-information">Test Information</a></li>
 <li><a href="#classroom-expectations">Classroom Expectations</a></li>
 <li><a href="#grading">Grading</a></li>
@@ -90,84 +92,78 @@
 
         <hr />
 
-        <h3 id="course-description">Course Description</h3>
-<p>(3 credit hours) First order finite difference models; derivatives - limits, power rule, graphing, and optimization; exponential and logarithmic functions - growth and decay models; integrals - computation, area, total change; applications in life, management, and social sciences. Credit not allowed for more than one of MA 121, 131, and 141.</p>
-<p>Prerequisite: C- or better in MA 107 or MA 111, or 520 or better on the SAT Subject Test in Mathematics Level 2 or the NCSU Math Skills Test, or 2 or better on an AP Calculus exam. Credit is not allowed for both MA 131 and MA 121 or MA 141.</p>
-<p><em>GEP Mathematical Sciences.</em></p>
+        <p>Your day-to-day instructor for this course is TBD. Dr. Maultsby is the Coordinator for Distance Education (DE) and serves as the administrator for all DE courses in the Department of Mathematics, including this course.</p>
+<p>The course videos were recorded by Dr. Tim Kelley <em>specifically</em> for this section of MA 580; he has no current involvement with the course. Any comments about homework, exams, grading, policies, etc., that are made in the videos applied to that semester, not to our semester.</p>
+<hr />
+<h3 id="course-description">Course Description</h3>
+<p>(3 credit hours) Algorithm behavior and applicability. Effect of roundoff errors, systems of linear equations and direct methods, least squares via Givens and Householder transformations, stationary and Krylov iterative methods, the conjugate gradient and GMRES methods, convergence of method.</p>
+<p>Prerequisite MA 405; MA 425 or MA 511; high-level computer language</p>
 <hr />
 <h3 id="learning-objectives">Learning Objectives</h3>
-<p>Student learning outcomes that are relevant to the GEP Mathematical Sciences:</p>
+<p>Students are expected to master techniques of Numerical Analysis. By the end of this course, students will be able to:</p>
 <ol>
-<li>Improve and refine mathematical problem-solving abilities: Analyze mathematical models for financial problems that involve compound interest with deposits or withdrawals. </li>
-<li>Develop logical reasoning skills: Apply limit theorems to evaluate limits, including ones involving infinity.</li>
+<li>
+<p><strong>Select appropriate numerical methods</strong> for linear, nonlinear, and eigenvalue problems by analyzing problem structure, conditioning, stability, and computational constraints.</p>
+</li>
+<li>
+<p><strong>Implement core numerical algorithms</strong> for linear systems, least squares problems, nonlinear equations, eigenvalue problems, and multigrid methods, and evaluate their performance.</p>
+</li>
+<li>
+<p><strong>Analyze sources of numerical error</strong>, including floating-point effects, conditioning, and algorithmic instability, and use this analysis to diagnose method failure and guide method selection.</p>
+</li>
+<li>
+<p><strong>Interpret convergence behavior and accuracy</strong> of numerical methods using theoretical tools such as error bounds, residuals, and conditioning estimates.</p>
+</li>
+<li>
+<p><strong>Use numerical software and computational tools responsibly</strong>, understanding both their capabilities and limitations.</p>
+</li>
+<li>
+<p><strong>Communicate numerical results professionally</strong>, including clear documentation of assumptions, method choices, limitations, and observed behavior in computational experiments.</p>
+</li>
 </ol>
-<p>Additionally, students will</p>
-<ol>
-<li>Gain insight to useful topics in calculus including graphs, limits, derivatives, and integrals.</li>
-<li>Use calculus as a tool for solving problems in life and management sciences.</li>
-<li>Develop mathematical thinking and problem solving skills.</li>
-<li>Show integrity in the classroom and affiliated spaces, including the class forum(s). </li>
-<li>Practice time management skills and professional communication.</li>
-</ol>
+<p>Homework and exams emphasize practical problem solving and computational reasoning, with theory used to justify algorithm choice, interpret results, and explain observed successes or failures.</p>
 <hr />
 <h3 id="course-structure">Course Structure</h3>
 <h4 id="lecture-materials">Lecture Materials</h4>
-<p>Course lectures were pre-recorded specifically for this section by Dr. Brenda Burns; however, she is not the instructor of this section. They are hosted on Panopto, and students should access them through the course Moodle page. Note that Safari sometimes does not allow this, whereas Chrome and Firefox are more user friendly.</p>
-<p>In this online asynchronous course, the video content is designed to approximate the 150 minutes of weekly contact time typical of a regular semester course. However, please note that the duration of video content may vary from week to week. Some weeks may feature more than 150 minutes of videos, while others may have less.</p>
-<p>You may shift your viewing schedule each week to accommodate your own schedule. However, please keep in mind that this online, distance-education course is fast-paced, and it may become difficult to catch up if you fall behind.</p>
+<p>The material for this class is presented with 40 lectures divided up by week. Most weeks consist of three ~50 minute lectures. You may find it useful to follow a MWF calendar for this class, or you may choose to watch the lectures at other times each week. </p>
 <h4 id="live-sessions">Live sessions</h4>
 <p>TBD</p>
 <hr />
 <h3 id="communication-and-getting-help">Communication and Getting Help</h3>
 <h4 id="forum">Forum</h4>
-<p>We will use the Yellowdig platform for our course community and discussions. Ideally, math questions should be asked in office hours or on Yellowdig. In general, I will not answer math questions sent by email-if you have a math question you would like to send to me, please post it on Yellowdig. I will monitor and respond to questions on Yellowdig.</p>
-<p>As you create posts and make comments, and as other students react to or comment on your posts, you will automatically receive participation points. The points you earn in Yellowdig are passed to the Moodle gradebook for your discussion credit.</p>
-<p>To get 100% for your recitation score, you will need to accumulate points each week over the course of the semester. Here is how it works:</p>
-<ul>
-<li>There are "weekly periods" in the course. The forum will open on the first day of class, which will serve as the first "week". Holiday weeks (Fall Break, Thanksgiving Break) are merged with neighboring weeks, and the week of final exams is merged with the last week of class.</li>
-<li>To stay on pace, you should aim to earn 1000 points for each weekly period. However, you can actually earn up to 1350 points per week. Therefore, you can create a buffer in case you fall short in any week.</li>
-<li>At 11:59 pm at the end of each weekly period, the weekly points will reset. You will have a new period in which to earn up to 1350/1000. You can keep posting even after you have reached the weekly maximum; you just will stop earning additional credit toward your grade until the next reset.</li>
-<li>You may exceed the maximum semester point total in Yellowdig, but the maximum score in Moodle is 100%.</li>
-</ul>
-<p>To start, please use the "Introductions/Community" Topic and share a bit about who you are and what you are hoping to get out of taking this class. Please feel welcome to share pictures, videos, or interesting links about you and your accomplishments!</p>
+<p>We will use <strong>Piazza</strong> for class discussion and homework questions. You are encouraged to use Piazza to discuss concepts and homework with discretion-hints and suggestions are okay, but full solutions will be deleted. You can post under your name or you may be anonymous to your classmates; however, the instructor will be able to see who you are. Please be respectful of your fellow classmates' ideas and attempts. If you have a math question you are not sure should be a public post, it is better to send me a direct message as a private post on Piazza.</p>
+<p>Enroll in this class Piazza through the Piazza link near the top of Moodle.</p>
+<p>Request: when asking a question about a specific item (like an item in Moodle), please include a direct link to that item (e.g. the Moodle url). It helps everyone answer your question a lot faster.</p>
 <h4 id="email">Email</h4>
-<p>Contact me for confidential and private discussions about grades, scheduling office hours, etc. Please include MA 131 in the subject line. In general, I may not respond to messages outside of business hours (M-F, 9am-5pm), and it may take 24-72 hours for me to respond to an message. Math questions are generally best asked in office hours or on our forum, not by email.</p>
-<h4 id="tutoring-centers">Tutoring Centers</h4>
-<p>During the regular school year, there is free help available on campus for MA 131. See the following links:</p>
+<p>Contact me for confidential and private discussions about grades, scheduling office hours, etc. Please include MA 580 in the subject line. In general, I may not respond to messages outside of business hours (M-F, 9am-5pm), and it may take 24-72 hours for me to respond to an message. Math questions are generally best asked in office hours or on our forum, not by email.</p>
+<hr />
+<h3 id="textbook-and-other-resources">Textbook and other resources</h3>
+<p>We will use free online textbooks which are provided on Moodle and which can also be found through <a href="https://reserves.lib.ncsu.edu/">NC State Library Course Reserves.</a></p>
 <ul>
-<li><a href="https://math.sciences.ncsu.edu/undergraduate/courses-faq/math-multimedia-center/">Math Tutoring Center (MTC)</a> in SAS 2105. This room has many computers available so that you can work on your assignments. The room is a low-stress environment: you may work quietly in the room without engaging a tutor, or you may ask questions of the graduate tutors when they are available.</li>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/drop-in-tutoring/">Academic Success Center (ASC)</a> in D.H. Hill Library has a few options:<ul>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/drop-in-tutoring/">ASC Drop-In Tutoring</a></li>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/appointment-tutoring/">ASC Appointment Tutoring</a></li>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/weekly-group-tutoring/">ASC Weekly Group Tutoring</a></li>
-</ul>
+<li>
+<p>I. C. F. Ipsen, Numerical Matrix Analysis, SIAM, 2009. <a href="https://catalog.lib.ncsu.edu/record/NCSU2514760">Link</a></p>
+</li>
+<li>
+<p>C. T. Kelley, Iterative Methods for Linear and Nonlinear Equations, SIAM 1995. <a href="https://catalog.lib.ncsu.edu/record/NCSU2512957">Link</a></p>
+</li>
+<li>
+<p>Desmond J. Higham and Nicholas J Higham, Matlab Guide: Second Edition, 2005. <a href="https://catalog.lib.ncsu.edu/record/NCSU3108706">Link</a></p>
 </li>
 </ul>
-<p>For Drop-In Tutoring hours, notice the MTC is open during the day, and the ASC is open in the evening.</p>
+<h4 id="latex-resources">LaTeX Resources</h4>
+<h3 id="latex-resources_1">LaTeX resources</h3>
+<p>The links below provide learning materials and software for LaTeX. Additional resources are located in Moodle.</p>
+<ul>
+<li><a href="https://catalog.lib.ncsu.edu/record/NCSU2485558">Learning LaTeX — Griffiths &amp; Higham (NCSU library)</a> — Library record for the book "Learning LaTeX".</li>
+<li><a href="https://www.latex-project.org/">LaTeX Project — software and documentation</a> — Official LaTeX distribution and documentation.</li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX">LaTeX Wikibook — comprehensive guide</a> — Community-maintained LaTeX reference and examples.</li>
+<li><a href="https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer">Getting started with LaTeX — primer (Trinity College Dublin)</a> — Introductory tutorial and examples.</li>
+<li><a href="https://miktex.org/">MiKTeX — easy-to-install LaTeX for Windows</a> — Windows installer and documentation for MiKTeX.</li>
+<li><a href="https://docs.moodle.org/38/en/Using_TeX_Notation">Using TeX notation in Moodle forums</a> — Moodle documentation for inserting math with TeX.</li>
+</ul>
 <hr />
-<h3 id="textbook-and-webassign">Textbook and WebAssign</h3>
-<p>Our textbook is Calculus for Engineers and Scientists, Volume I by John Franke, John Griggs, and Larry Norris, from NC State University. The text is in pdf format and is available to students under the Resources tab on WebAssign. </p>
-<p>Please see information about purchasing WebAssign under Student Expenses. Do not create a new account if you already have a Cengage account. If you have trouble accessing Cengage, please post on the class forum.</p>
-<p>The WebAssign homework assignments are obtained, submitted, and graded online with grades appearing in the course Gradebook. Please find our assignments on Moodle.</p>
-<h4 id="recommendations">Recommendations</h4>
-<ul>
-<li>Work ahead of schedule. Due dates are chosen to ensure that you have ample time between the videos and the due dates, but you should work on the homework sets as you watch the videos.</li>
-<li>Print each assignment and work it with pencil and paper before submitting. I recommend collection your final solutions in a binder, spiral notebook, or similar.</li>
-<li>Number each homework set and your work for each problem so that you can study it later. Do not work problems out on unlabeled scratch paper.</li>
-<li>Work daily or at least regularly to keep the material fresh in your mind and cut down on time searching for or remembering forgotten information.</li>
-</ul>
-<p>Your WebAssign average in the Moodle gradebook will be a weighted arithmetic mean based on each assignment's point total. For example, your score on an assignment worth 50 points counts more than your score on an assignment worth 10 points.</p>
-<h4 id="webassign-due-dates">WebAssign Due Dates</h4>
-<p>Due dates are listed with each assignment on WebAssign; please be sure to check the upcoming WebAssign due dates each week. I encourage you to work on each WebAssign as soon as possible—do not wait until the due date to begin. Please feel free to discuss WebAssign on Yellowdig (the course forum), including the specifics of problems and your attempts at solutions.</p>
-<p>When you have finished an assignment, you can click Mark as done in Moodle to indicate for your records that the assignment is completed.</p>
-<h4 id="extensions-and-dropped-grades">Extensions and Dropped Grades</h4>
-<p>If you need extra time to complete an assignment, WebAssign offers a seven-day extension for assignments with 80% credit (a 20% penalty). How this works: </p>
-<ul>
-<li>For example, if an assignment has 5 questions, each worth 10 points, and you need more time to finish the last problem, your grade will be a maximum of 48 out of 50 (10 + 10 + 10 + 10 + 8). The 20% penalty only applies to the problems you submit late.</li>
-<li>You set up the extension yourself directly in WebAssign. When you request an extension, the assignment will be open for an additional 24 hours. You can request multiple extensions, but each request must be made after the previous 24-hour period has expired. For instance, you cannot request all seven days of extensions at once; you must wait for each 24-hour period to finish before requesting the next extension.</li>
-<li>The extension period runs for seven consecutive calendar days. These days can overlap with breaks: you cannot pause the extension during a university break and may need to work during break to finish your assignment.</li>
-</ul>
-<p>Because of these policies, extensions from the instructor are generally not given. You should try to complete every assignment as soon as you can and as best as you can so that you can self-extend assignments in case of emergencies. If you have extenuating circumstances that affect multiple assignments, please contact me to discuss your situation, but it needs to be first documented with Absence Verification.</p>
+<h3 id="homework">Homework</h3>
+<p>This course will have five written homework assignments. You will be required to use LaTeX or another program to type up your answers. Keep in mind that writing solutions can be challenging and require a lot of time. You should be sure to begin the next homework set as soon as possible.</p>
 <hr />
 <h3 id="test-information">Test Information</h3>
 <h4 id="test-dates">Test Dates</h4>
@@ -229,11 +225,13 @@
 </div>
 
 <h4 id="calculators">Calculators</h4>
-<p>You may use basic (four-function) calculators on exams. These calculators must have no calculus or graphing capabilities.</p>
+<p>You may use scientific calculators on exams. These calculators must not have calculus capabilities (differentiation, integration), CAS (computer algebra system) capabilities, or access to the internet.</p>
 <p>See the Moodle guide Calculator Guidelines for a list of appropriate calculators. If you are on-campus, you may rent a suitable calculator from the NC State Libraries: <a href="https://www.lib.ncsu.edu/devices/calculators">Calculator rentals at NC State Libraries</a>.</p>
 <h4 id="test-format">Test Format</h4>
 <p>Each exam will be a written, in-person exam administered at an approved testing location. You must bring appropriate photo identification and any permitted materials specified in this syllabus and in my course announcements.</p>
 <p>If you take the written exam at DELTA, then you will complete it on an iPad with an Apple Pencil.</p>
+<h4 id="regrading">Regrading</h4>
+<p>If a grading error is found after looking at the posted answer key then you should provide a written explanation of the error attached to the original test or submit a regrade request through Gradescope, to the instructor within 1 week. Do not alter the original work. The entire test may be re-graded and the test grade is subject to remain the same, increase or decrease at the discretion of the instructor. </p>
 <hr />
 <h3 id="classroom-expectations">Classroom Expectations</h3>
 <ol>
@@ -272,10 +270,9 @@
 <h4 id="grade-weighting-and-numerical-conversion">Grade Weighting and Numerical Conversion</h4>
 <p>Your grade will be determined by the following breakdown:</p>
 <ul>
-<li>Yellowdig: 5%</li>
-<li>Homework (WebAssign): 25%</li>
-<li>Tests: 50% total (20% for your two highest scores, 10% for your lowest score)</li>
-<li>Final: 20%</li>
+<li>Homework: 40% </li>
+<li>Tests: 30% (15% each) </li>
+<li>Final: 30% </li>
 </ul>
 <p>Grades are tracked in real-time in the Moodle <strong>Gradebook</strong>.</p>
 <h4 id="conversion-from-numerical-grade-to-letter-grade">Conversion from Numerical Grade to Letter Grade</h4>
@@ -320,23 +317,21 @@
 <h3 id="course-schedule">Course Schedule</h3>
 <p>The course schedule is tentative and subject to change. Adjustments may be made to accommodate the pace of the class and unforeseen circumstances. All major changes will be announced in class and posted on Moodle.</p>
 <ul>
-<li>Course Calendar: <a href="/course_syllabi/MA131-601-calendar-spring.html">HTML</a></li>
+<li>Course Calendar: <a href="/course_syllabi/MA580-601-calendar-spring.html">HTML</a></li>
 </ul>
 <h4 id="important-dates">Important Dates</h4>
 <p>For holidays and other university closures, please consult <a href="https://studentservices.ncsu.edu/calendars/academic/">the general NC State Academic Calendar.</a></p>
 <p>Your final exam schedule is already determined; find it here: <a href="https://studentservices.ncsu.edu/calendars/exam/">NC State Final Exam Calendar.</a> You are responsible for reviewing your final exam sessions to arrange a suitable time for this course.</p>
 <h4 id="list-of-topics">List of Topics</h4>
-<p>Here are the major topics of MA 131, with the approximate regular-semester time allocated to each:</p>
+<p>Here are the major topics of MA 580, with the approximate regular-semester time allocated to each:</p>
 <ul>
-<li><strong>Preliminaries, Floating Point Arithmetic, and Conditioning (~1.5 weeks).</strong> Major topics include review of mathematical prerequisites, notation and preliminaries, floating-point arithmetic, roundoff error, conditioning and stability, and an initial introduction to linear systems and Gaussian elimination.</li>
-<li><strong>Direct Methods for Linear Systems (~2 weeks).</strong> Major topics include Gaussian elimination in depth, the factor–solve paradigm, LU and PLU factorizations, pivoting strategies, error analysis in direct solvers, the Banach lemma, and special matrix structures including symmetric positive definite systems and Cholesky decomposition.</li>
-<li><strong>Sparse Linear Systems and Model Problems (~1.5 weeks).</strong> Major topics include sparse matrix structure, Poisson’s equation, sparse Gaussian elimination, time-dependent problems, Crank–Nicolson methods, and applications such as the time-dependent Schrödinger equation.</li>
-<li><strong>Least Squares Problems and Orthogonal Factorizations (~2 weeks).</strong> Major topics include linear least squares problems, QR decomposition, Householder transformations, Givens rotations, classical and modified Gram–Schmidt methods, and the singular value decomposition (SVD), including rank-deficient and underdetermined systems.</li>
-<li><strong>Stationary Iterative Methods (~1 week).</strong> Major topics include stationary iterative methods for linear systems, classical schemes such as Jacobi and Gauss–Seidel, convergence considerations, and applied examples including the linear neutron transport equation.</li>
-<li><strong>Krylov Subspace Methods (~2 weeks).</strong> Major topics include Krylov subspace methods, GMRES and its analysis, implementation and preconditioning strategies, conjugate gradient methods (CG, CGNR, CGNE), and applications to large-scale linear systems.</li>
-<li><strong>Nonlinear Equations and Newton-Type Methods (~2 weeks).</strong> Major topics include nonlinear systems of equations, contraction mappings, Newton’s method and convergence theory, Newton–Krylov methods, implementation issues, and practical nonlinear solver examples.</li>
-<li><strong>Nonlinear Least Squares and Eigenvalue Problems (~1.5 weeks).</strong> Major topics include nonlinear least squares problems, Gauss–Newton iteration, eigenvalue problems, the power and inverse power methods, shifted iterations, eigenvalue conditioning, and the Bauer–Fike theorem.</li>
-<li><strong>Error Control and Multigrid Methods (~2 weeks).</strong> Major topics include residual correction and iterative refinement, two-grid methods, multigrid V-cycles, multigrid as a preconditioner, nonlinear multigrid ideas, and multigrid methods for integral equations.</li>
+<li>Unit 1: Difference Equations and Interest (~2 weeks). Major topics include overview of the course, introductory difference equations, simple and compound interest, and graphing difference equations in applied settings.</li>
+<li>Unit 2: Lines, Tangent Lines, and Limits (~2 weeks). Major topics include slopes and equations of lines, tangent lines, introductory limit concepts, evaluating limits, and the limit definition of the derivative.</li>
+<li>Unit 3: Derivatives and Their Interpretation (~2 weeks). Major topics include differentiability and continuity, basic differentiation rules, derivatives as rates of change, and preparation for Test 1.</li>
+<li>Unit 4: Curve Sketching and Optimization (~2 weeks). Major topics include first and second derivative tests, concavity, graphing functions, and solving optimization problems in applied contexts.</li>
+<li>Unit 5: Product, Quotient, and Chain Rules; Exponentials and Logarithms (~3 weeks). Major topics include extended differentiation rules, exponential and logarithmic functions, their derivatives, and applications leading to Test 2.</li>
+<li>Unit 6: Antidifferentiation and the Definite Integral (~2 weeks). Major topics include indefinite integrals, antidifferentiation formulas, definite integrals, and interpreting integrals geometrically.</li>
+<li>Unit 7: Applications of Integration (~2.5 weeks). Major topics include Riemann sums, area under curves, area between curves, average value of a function, volumes of revolution, substitution techniques, and improper integrals, culminating in Test 3 and the comprehensive final exam.</li>
 </ul>
 <h4 id="course-continuity">Course Continuity</h4>
 <p>To ensure course continuity, changes made to the method of instructional delivery, course structure, course schedule, number of assignments, grading or other aspects of the course after the start of the term will be communicated to all students in written form (e.g., by an instructor announcement) when course changes are implemented.</p>
@@ -401,11 +396,11 @@
 </ul>
 </li>
 <li>
-<p><a href="https://www.yellowdig.co/">Yellowdig</a>: this site hosts our class forum and is a graded component of the course. You will use <strong>Yellowdig</strong> to ask questions regarding the lecture or homework.</p>
+<p><a href="https://piazza.com">Piazza</a>: this site hosts our class forum. You will use <strong>Piazza</strong> to ask questions regarding the lecture or homework.</p>
 <ul>
-<li><a href="https://help.yellowdig.co/kb/en/article/our-commitment-to-accessibility">Yellowdig Accessibility Statement</a></li>
-<li><a href="https://www.yellowdig.co/privacy">Yellowdig Privacy Policy</a></li>
-<li><a href="https://help.yellowdig.co/kb/en">Yellowdig Help Center</a></li>
+<li><a href="https://piazza.com/product/accessibility">Piazza Accessibility Statement</a></li>
+<li><a href="https://piazza.com/legal/privacy">Piazza Privacy Policy</a></li>
+<li><a href="https://support.piazza.com/support/home">Piazza Support Center</a></li>
 </ul>
 </li>
 <li>
@@ -422,6 +417,14 @@
 <li><a href="https://www.zoom.com/en/accessibility/">Zoom Accessibility Statement</a></li>
 <li><a href="https://www.zoom.com/en/trust/privacy/privacy-statement/">Zoom Privacy Policy</a></li>
 <li><a href="https://support.zoom.com/hc">Zoom Support</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://www.gradescope.com/">Gradescope</a>: We will use Gradescope for collecting and returning written work.</p>
+<ul>
+<li><a href="https://help.gradescope.com/article/w73ayv69kf-gradescope-accessibility-information-and-resources">Gradescope Accessibility Information</a></li>
+<li><a href="https://www.gradescope.com/privacy">Gradescope Privacy Policy</a></li>
+<li><a href="https://help.gradescope.com/">Gradescope Help Center</a></li>
 </ul>
 </li>
 </ul>
