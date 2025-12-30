@@ -400,33 +400,5 @@ with additional references at <a href="https://oied.ncsu.edu/equity/policies/">N
       </main>
     </div>
 
-<script>
-  (function () {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
-
-    document.documentElement.classList.add("reveal-ready");
-
-    // Mark elements you want to animate: cards, TOC, and content blocks
-    const targets = document.querySelectorAll(
-      ".content-card, .toc-container, .content-flow > *"
-    );
-
-    targets.forEach(el => el.classList.add("reveal"));
-
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add("reveal-in");
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.08 });
-
-    targets.forEach(el => obs.observe(el));
-  })();
-</script>
-
-
   </body>
 </html>
