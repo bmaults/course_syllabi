@@ -1,3 +1,27 @@
+<style>
+  /* Screen (HTML view) */
+  body {
+    font-size: 12pt;
+  }
+
+  /* PDF / print (WeasyPrint) */
+  @page {
+    size: letter;
+    margin: 0.75in;
+  }
+
+  @media print {
+    body {
+      font-size: 10.5pt;
+      line-height: 1.35;
+    }
+
+    h1 { font-size: 18pt; }
+    h2 { font-size: 14pt; }
+    h3 { font-size: 12pt; }
+  }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +38,6 @@
       class="wrap syllabus-root"
       style="
       font-family: Arial, sans-serif;
-      font-size: 12pt;
       line-height: 1.4;
       max-width: 900px;
       margin: 0 auto;
@@ -100,17 +123,17 @@
 <p>Upon completion of this course, students will be able to master the following:</p>
 <ul>
 <li>The mathematical concepts of matrices and vectors, and their basic operations (inner product, transpose,
-scalar multiplication, addition, multiplication, and outer product), and their time complexity</li>
+scalar multiplication, addition, multiplication, and outer product), and their time complexity.</li>
 <li>The mathematical problems of solving linear systems and least squares problems, and the existence and
 uniqueness of their solutions.</li>
 <li>The fundamental matrix decompositions (pivoted LU, Cholesky, QR), and their use in the solution of linear
 systems and least squares problems.</li>
 <li>The Singular Value decomposition (SVD), and its use for the solution of least squares problems and low-
 rank approximation of matrices. </li>
-<li>Generation and manipulation of matrices in Matlab, and the fundamental Matlab commands</li>
-<li>The properties of floating point arithmetic and its effect on the accuracy of matrix operations</li>
+<li>Generation and manipulation of matrices in Matlab, and the fundamental Matlab commands.</li>
+<li>The properties of floating point arithmetic and its effect on the accuracy of matrix operations.</li>
 <li>The concept of sensitivity of a mathematical problem to perturbations (conditioning), and the behavior of
-matrix operations in floating point arithmetic (numerical stability)</li>
+matrix operations in floating point arithmetic (numerical stability).</li>
 </ul>
 <hr />
 <h3 id="course-structure">Course Structure</h3>
@@ -352,8 +375,8 @@ requirements. Learning materials, activities, assignments, and assessments are d
 <li>Homework: You may consult your notes, the textbook, each other, or online resources.</li>
 <li>Forum discussion boards: You are encouraged to discuss mathematical concepts and problems with your classmates. However, you must arrive at your own solutions with your own work. Do not seek nor state final answers on the forum; focus on understanding the concepts.</li>
 </ul>
-<p><em>Artifical Intelligence</em>
-You are not allowed to use any artificial intelligence (AI) tools, such as chatbots, text generators, paraphrasers, summarizers, or solvers, to complete any part of your assignments. Any attempt to use these tools will be considered academic misconduct and will be dealt with according to the university’s academic integrity policy. You are expected to complete all work independently and without the assistance of AI-generated content. If you have questions about what constitutes acceptable use of AI tools, please consult with the instructor before submitting your work.</p>
+<p><strong>Artifical Intelligence</strong></p>
+<p>You are not allowed to use any artificial intelligence (AI) tools, such as chatbots, text generators, paraphrasers, summarizers, or solvers, to complete any part of your assignments. Any attempt to use these tools will be considered academic misconduct and will be dealt with according to the university’s academic integrity policy. You are expected to complete all work independently and without the assistance of AI-generated content. If you have questions about what constitutes acceptable use of AI tools, please consult with the instructor before submitting your work.</p>
 <h4 id="disability-resources">Disability Resources</h4>
 <p>Reasonable accommodations will be made for students with verifiable disabilities. In order to take advantage of available accommodations, students must register with the Disability Resource Office at Holmes Hall, Suite 304, 2751 Cates Avenue, Campus Box 7509, 919-515-7653. For more information on NC State's policy on working with students with disabilities, please see the Academic Accommodations for Students with Disabilities Regulation (<a href="https://policies.ncsu.edu/regulation/reg-02-20-01/">NCSU REG 02.20.01</a>).</p>
 <p>Students who receive accommodations are responsible for filing those accommodations officially with DRO before the tests occur. It is not appropriate to tell the instructor that you should receive accommodations without going through the official channels. The instructor will only adjust test conditions after receiving the official Accommodation Letter Notification from DRO. Adjustments are never made retroactively to past examinations.</p>

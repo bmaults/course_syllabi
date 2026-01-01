@@ -1,3 +1,27 @@
+<style>
+  /* Screen (HTML view) */
+  body {
+    font-size: 12pt;
+  }
+
+  /* PDF / print (WeasyPrint) */
+  @page {
+    size: letter;
+    margin: 0.75in;
+  }
+
+  @media print {
+    body {
+      font-size: 10.5pt;
+      line-height: 1.35;
+    }
+
+    h1 { font-size: 18pt; }
+    h2 { font-size: 14pt; }
+    h3 { font-size: 12pt; }
+  }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +38,6 @@
       class="wrap syllabus-root"
       style="
       font-family: Arial, sans-serif;
-      font-size: 12pt;
       line-height: 1.4;
       max-width: 900px;
       margin: 0 auto;
