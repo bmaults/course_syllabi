@@ -20,6 +20,22 @@
     h2 { font-size: 14pt; }
     h3 { font-size: 12pt; }
   }
+
+  /* Default: screen */
+  .print-only {
+    display: none;
+  }
+
+  /* Print / PDF */
+  @media print {
+    .screen-only {
+      display: none !important;
+    }
+
+    .print-only {
+      display: block !important;
+    }
+  }
 </style>
 
 <!DOCTYPE html>
