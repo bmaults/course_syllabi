@@ -4,6 +4,19 @@
     font-size: 12pt;
   }
 
+  /* HTML view: force breathing room under all tables */
+  .syllabus-root table {
+    margin: 1em 0 1.2em 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    min-width: 40% !important;
+    }
+    .syllabus-root table th {
+      min-width: 15% !important;
+    }
+  }
+
   /* PDF / print (WeasyPrint) */
   @page {
     size: letter;
@@ -55,13 +68,7 @@
 
     @top-center {
       content: url("https://cdn.ncsu.edu/brand-assets/logos/ncstate-brick-4x1-white-red-type-rgb-min.png");
-      transform: scale(0.4);
-    }
-
-    @top-right {
-      content: string(course_title);
-      font-size: 9pt;
-      color: #666;
+      transform: scale(0.25);
     }
 
     @bottom-right {
@@ -83,11 +90,11 @@
     color: #333;
   }
 
-.meta.term {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #444;
-  }
+  .meta.term {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #444;
+    }
 </style>
 
 <!DOCTYPE html>
@@ -546,7 +553,6 @@ with additional references at <a href="https://oied.ncsu.edu/equity/policies/">N
       according to the May 27, 2020 revision.
     </p>
 </footer>
-      <p class="screen-only" style="font-size:0.85rem; margin:0; text-align:center;">Department of Mathematics · NC State University</p>
       </main>
     </div>
 
