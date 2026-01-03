@@ -7,7 +7,7 @@ Syllabi for online mathematics courses
 - MA 111-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA111-601.html), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA111-601-calendar-spring.html)
 - MA 114-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA114-601.html), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA114-601-calendar-spring.html)
 - MA 131-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA131-601.html), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA131-601-calendar-spring.html)
-- MA 132-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA132-601.html), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA132-601-calendar-spring.html)
+<!--- MA 132-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA132-601.html), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA132-601-calendar-spring.html)-->
 - MA 141-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA141-601.html), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA141-601-calendar-spring.html)
 - MA 241-601: [Syllabus](https://bmaults.github.io/course_syllabi/MA241-601.html)
     - [Spring calendar (embed, opens in new tab)](https://calendar.google.com/calendar/embed?src=c_7444926413296def51f0b36ba38164c5afe8edaa45929b3277b248ff7345f41b%40group.calendar.google.com&ctz=America%2FNew_York) · [Subscribe in Google Calendar](https://calendar.google.com/calendar/u/0/r?cid=c_7444926413296def51f0b36ba38164c5afe8edaa45929b3277b248ff7345f41b%40group.calendar.google.com)
