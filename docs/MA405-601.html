@@ -36,13 +36,65 @@
       display: block !important;
     }
   }
+
+  @page {
+    size: letter;
+    margin: 1in 0.9in 0.95in 0.9in;
+
+    @bottom-left {
+      content: "MA 405 Section 601 Syllabus";
+      font-size: 9pt;
+      color: #666;
+    }
+
+    @bottom-center {
+      content: "Spring 2026";
+      font-size: 9pt;
+      color: #666;
+    }
+
+    @top-center {
+      content: url("https://cdn.ncsu.edu/brand-assets/logos/ncstate-brick-4x1-white-red-type-rgb-min.png");
+      transform: scale(0.4);
+    }
+
+    @top-right {
+      content: string(course_title);
+      font-size: 9pt;
+      color: #666;
+    }
+
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 9pt;
+      color: #666;
+    }
+  }
+
+  /* Capture the title for the running header */
+  h1.print-only {
+    string-set: course_title content();
+  }
+
+  .meta {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.25em 0;
+    color: #333;
+  }
+
+.meta.term {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444;
+  }
 </style>
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>MA 405: Introduction to Linear Algebra</title>
+    <title>Introduction to Linear Algebra Syllabus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Global stylesheet for GitHub Pages -->
     <link rel="stylesheet" href="/course_syllabi/styles.css" />
@@ -61,14 +113,24 @@
       "
     >
 
-      <h1 class>MA 405: Introduction to Linear Algebra</h1>
-      <h2>Department of Mathematics · NC State University</h2>
-      <h2>Spring 2026 Course Syllabus</h2>
+      <h1>
+      MA 405 Section 601 Course Syllabus
+      </h1>
+
+      <h2>Introduction to Linear Algebra</h2>
+
+      <p class="meta screen-only">
+        Department of Mathematics · NC State University
+      </p>
+
+      <p class="meta term">
+        Spring 2026
+      </p>
 
       
       <!-- SCREEN-ONLY: visible on the web, hidden in PDF/print -->
       <p class="screen-only">
-        <a href="/course_syllabi/MA405-601.pdf" target="_blank" rel="noopener">
+        <a href="https://bmaults.github.io/course_syllabi/MA405-601.pdf" target="_blank" rel="noopener">
           View, download, or print this syllabus as a PDF
         </a>
       </p>
@@ -77,8 +139,8 @@
       
       <!-- PRINT-ONLY: shows up in the PDF/printout -->
       <p class="print-only">
-        <a href="/course_syllabi/MA405-601.html">
-          Click here for an HTML version of this syllabus.
+        <a href="https://bmaults.github.io/course_syllabi/MA405-601.html">
+          Click here for an HTML version of this syllabus
         </a>
       </p>
       
@@ -125,7 +187,6 @@
               Find our course on
               <a href="https://wolfware.ncsu.edu/">NC State Wolfware.</a>
             </li>
-            <li><strong>Section:</strong> 601</li>
           </ul>
         
 
@@ -378,7 +439,7 @@ Students will demonstrate the ability to reason with abstract linear algebra con
 <h3 id="course-schedule">Course Schedule</h3>
 <p>The course schedule is tentative and subject to change. Adjustments may be made to accommodate the pace of the class and unforeseen circumstances. All major changes will be announced in class and posted on Moodle.</p>
 <ul>
-<li>Course Calendar: <a href="/course_syllabi/MA405-601-calendar-spring.html">HTML</a></li>
+<li>Course Calendar: <a href="https://bmaults.github.io/course_syllabi/MA405-601-calendar-spring.html">HTML</a></li>
 </ul>
 <h4 id="important-dates">Important Dates</h4>
 <p>For holidays and other university closures, please consult <a href="https://studentservices.ncsu.edu/calendars/academic/">the general NC State Academic Calendar.</a></p>
@@ -549,8 +610,8 @@ with additional references at <a href="https://oied.ncsu.edu/equity/policies/">N
       <a href="https://policies.ncsu.edu/regulation/reg-02-20-07/">NC State REG 02.20.07 - Course Syllabus</a>
       according to the May 27, 2020 revision.
     </p>
-    <p>Department of Mathematics · NC State University</p>
 </footer>
+      <p class="screen-only" style="font-size:0.85rem; margin:0; text-align:center;">Department of Mathematics · NC State University</p>
       </main>
     </div>
 
