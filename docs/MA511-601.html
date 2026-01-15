@@ -1,112 +1,116 @@
-<style>
-  /* Screen (HTML view) */
-  body {
-    font-size: 12pt;
-  }
-
-  /* HTML view: force breathing room under all tables */
-  .syllabus-root table {
-    margin: 1em 0 1.2em 0 !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    float: none !important;
-    min-width: 40% !important;
-    }
-    .syllabus-root table th {
-      min-width: 15% !important;
-    }
-  }
-
-  /* PDF / print (WeasyPrint) */
-  @page {
-    size: letter;
-    margin: 0.75in;
-  }
-
-  @media print {
-    body {
-      font-size: 10.5pt;
-      line-height: 1.35;
-    }
-
-    h1 { font-size: 18pt; }
-    h2 { font-size: 14pt; }
-    h3 { font-size: 12pt; }
-  }
-
-  /* Default: screen */
-  .print-only {
-    display: none;
-  }
-
-  /* Print / PDF */
-  @media print {
-    .screen-only {
-      display: none !important;
-    }
-
-    .print-only {
-      display: block !important;
-    }
-  }
-
-  @page {
-    size: letter;
-    margin: 1in 0.9in 0.95in 0.9in;
-
-    @bottom-left {
-      content: "MA 511-601 Syllabus";
-      font-size: 9pt;
-      color: #666;
-    }
-
-    @bottom-center {
-      content: "Spring 2026";
-      font-size: 9pt;
-      color: #666;
-    }
-
-    @top-center {
-      content: url("https://cdn.ncsu.edu/brand-assets/logos/ncstate-brick-4x1-white-red-type-rgb-min.png");
-      transform: scale(0.25);
-    }
-
-    @bottom-right {
-      content: "Page " counter(page) " of " counter(pages);
-      font-size: 9pt;
-      color: #666;
-    }
-  }
-
-  /* Capture the title for the running header */
-  h1.print-only {
-    string-set: course_title content();
-  }
-
-  .meta {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0.25em 0;
-    color: #333;
-  }
-
-  .meta.term {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #444;
-    }
-</style>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Advanced Calculus I Syllabus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Global stylesheet for GitHub Pages -->
     <link rel="stylesheet" href="/course_syllabi/styles.css" />
+
+    <!-- Per-page overrides (keep this AFTER the global stylesheet) -->
+    <style>
+      /* Screen (HTML view) */
+      body {
+        font-size: 12pt;
+      }
+
+      /* HTML view: force breathing room under all tables */
+      .syllabus-root table {
+        margin: 1em 0 1.2em 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+        min-width: 40% !important;
+      }
+
+      .syllabus-root table th {
+        min-width: 15% !important;
+      }
+
+      /* PDF / print (WeasyPrint) */
+      @page {
+        size: letter;
+        margin: 0.75in;
+      }
+
+      @media print {
+        body {
+          font-size: 10.5pt;
+          line-height: 1.35;
+        }
+
+        h1 { font-size: 18pt; }
+        h2 { font-size: 14pt; }
+        h3 { font-size: 12pt; }
+      }
+
+      /* Default: screen */
+      .print-only {
+        display: none;
+      }
+
+      /* Print / PDF */
+      @media print {
+        .screen-only {
+          display: none !important;
+        }
+
+        .print-only {
+          display: block !important;
+        }
+      }
+
+      @page {
+        size: letter;
+        margin: 1in 0.9in 0.95in 0.9in;
+
+        @bottom-left {
+          content: "MA 511-601 Syllabus";
+          font-size: 9pt;
+          color: #666;
+        }
+
+        @bottom-center {
+          content: "Spring 2026";
+          font-size: 9pt;
+          color: #666;
+        }
+
+        @top-center {
+          content: url("https://cdn.ncsu.edu/brand-assets/logos/ncstate-brick-4x1-white-red-type-rgb-min.png");
+          transform: scale(0.25);
+        }
+
+        @bottom-right {
+          content: "Page " counter(page) " of " counter(pages);
+          font-size: 9pt;
+          color: #666;
+        }
+      }
+
+      /* Capture the title for the running header */
+      h1.print-only {
+        string-set: course_title content();
+      }
+
+      .meta {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0.25em 0;
+        color: #333;
+      }
+
+      .meta.term {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #444;
+      }
+    </style>
   </head>
+
   <body>
+
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <div
@@ -662,6 +666,7 @@ with additional references at <a href="https://oied.ncsu.edu/equity/policies/">N
       <a href="https://policies.ncsu.edu/regulation/reg-02-20-07/">NC State REG 02.20.07 - Course Syllabus</a>
       according to the May 27, 2020 revision.
     </p>
+  </div>
 </footer>
       </main>
     </div>
