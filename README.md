@@ -1,6 +1,6 @@
 # course_syllabi
 
-Syllabi for online mathematics courses
+Syllabi for online mathematics courses.
 
 - MA 103-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA103-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA103-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA103-601-calendar-spring.html)
 - MA 107-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA107-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA107-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA107-601-calendar-spring.html)
@@ -31,3 +31,7 @@ Syllabi for online mathematics courses
 - MA 523-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA523-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA523-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA523-601-calendar-spring.html)
 <!--- MA 540-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA540-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA540-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA540-601-calendar-spring.html)-->
 - MA 580-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA580-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA580-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA580-601-calendar-spring.html)
+
+
+Archive:
+[Spring 2026 (PDF)](https://drive.google.com/drive/folders/1IYqEnJsrddSV9uMm1kBUivSw7l3IUEFc)
