@@ -2,25 +2,152 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>MA 412: Topics in Contemporary Math</title>
+    <title>Long-Term Actuarial Models Syllabus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Global stylesheet for GitHub Pages -->
-    <link rel="stylesheet" href="/course_syllabi/styles.css" />
+
+    <!-- Per-page overrides (keep this AFTER the global stylesheet) -->
+    <style>
+      /* Screen (HTML view) */
+      body {
+        font-size: 12pt;
+      }
+
+      /* HTML view: force breathing room under all tables */
+      .syllabus-root table {
+        margin: 1em 0 1.2em 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+        min-width: 40% !important;
+      }
+
+      .syllabus-root table th {
+        min-width: 15% !important;
+      }
+
+      /* PDF / print (WeasyPrint) */
+      @page {
+        size: letter;
+        margin: 0.75in;
+      }
+
+      @media print {
+        body {
+          font-size: 10.5pt;
+          line-height: 1.35;
+        }
+
+        h1 { font-size: 18pt; }
+        h2 { font-size: 14pt; }
+        h3 { font-size: 12pt; }
+      }
+
+      /* Default: screen */
+      .print-only {
+        display: none;
+      }
+
+      /* Print / PDF */
+      @media print {
+        .screen-only {
+          display: none !important;
+        }
+
+        .print-only {
+          display: block !important;
+        }
+      }
+
+      @page {
+        size: letter;
+        margin: 1in 0.9in 0.95in 0.9in;
+
+        @bottom-left {
+          content: "MA 412-601 Syllabus";
+          font-size: 9pt;
+          color: #666;
+        }
+
+        @bottom-center {
+          content: "Summer 2026";
+          font-size: 9pt;
+          color: #666;
+        }
+
+        @top-center {
+          content: url("https://cdn.ncsu.edu/brand-assets/logos/ncstate-brick-4x1-white-red-type-rgb-min.png");
+          transform: scale(0.25);
+          role: presentation;
+        }
+
+        @bottom-right {
+          content: "Page " counter(page) " of " counter(pages);
+          font-size: 9pt;
+          color: #666;
+        }
+      }
+
+      /* Capture the title for the running header */
+      h1.print-only {
+        string-set: course_title content();
+      }
+
+      .meta {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0.25em 0;
+        color: #333;
+      }
+
+      .meta.term {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #444;
+      }
+    </style>
   </head>
+
   <body>
+
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <div
       class="wrap syllabus-root"
-      style="font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.4;"
+      style="
+      font-family: Arial, sans-serif;
+      line-height: 1.4;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+      "
     >
-      <!-- This heading is PRINT-ONLY: appears in PDF/print, hidden on screen -->
-      <h1 class="print-only">MA 412: Topics in Contemporary Math</h1>
-      <h2>Department of Mathematics · NC State University</h2>
-      <h2>Spring 2026 Course Syllabus</h2>
+
+      <h1>
+      MA 412-601 Summer 2026
+      </h1>
+
+      <h2>Long-Term Actuarial Models Course Syllabus</h2>
+
+      <p class="meta screen-only">
+        Department of Mathematics · NC State University
+      </p>
 
       
+      <!-- SCREEN-ONLY: visible on the web, hidden in PDF/print -->
+      <p class="screen-only">
+        <a href="https://bmaults.github.io/course_syllabi/MA412-601.pdf" target="_blank" rel="noopener">
+          View, download, or print this syllabus as a PDF
+        </a>
+      </p>
+      
 
+      
+      <!-- PRINT-ONLY: shows up in the PDF/printout -->
+      <p class="print-only">
+        <a href="https://bmaults.github.io/course_syllabi/MA412-601.html">
+          Click here for an HTML version of this syllabus
+        </a>
+      </p>
       
 
       
@@ -33,6 +160,8 @@
 <li><a href="#course-structure">Course Structure</a></li>
 <li><a href="#communication-and-getting-help">Communication and Getting Help</a></li>
 <li><a href="#textbook">Textbook</a></li>
+<li><a href="#optional-supplemental-texts">Optional Supplemental Texts</a></li>
+<li><a href="#latex-resources_1">LaTeX resources</a></li>
 <li><a href="#homework">Homework</a></li>
 <li><a href="#test-information">Test Information</a></li>
 <li><a href="#classroom-expectations">Classroom Expectations</a></li>
@@ -51,91 +180,120 @@
         
           <h3 id="course-information">Course Information</h3>
           <ul>
-            <li><strong>Instructor:</strong> TBD</li>
+            <li><strong>Instructor:</strong> Anzhelika Vasilyeva</li>
             <li><strong>Email:</strong>
-              <a href="mailto:TBD">Email me at TBD</a>
+              <a href="mailto:avasily2@ncsu.edu">Email me at avasily2@ncsu.edu</a>
             </li>
             <li><strong>Office:</strong> TBD</li>
             <li><strong>Office Hours:</strong> TBD</li>
             <li><strong>Course Modality:</strong>
               This course is an online, asynchronous Distance Education course.
             </li>
-            <li><strong>Course website:</strong>
+            <li><strong>Course Website:</strong>
               Find our course on
               <a href="https://wolfware.ncsu.edu/">NC State Wolfware.</a>
             </li>
-            <li><strong>Section:</strong> 601</li>
           </ul>
         
 
         <hr />
 
         <h3 id="course-description">Course Description</h3>
-<p>(3 credit hours) Actuarial science is the discipline that applies mathematical and statistical methods to assess risk in insurance, finance, and other industries and professions. To become an actuary, one must pass a series of specialized exams on actuarial mathematics. This course covers (some of) the material for SOA Exam MLC: Models for Life Contingencies and SOA Exam FM: Financial Mathematics. Specifically, the course covers survival models, life tables, selection, insurance benefits, annuities, premium calculation, and time permitting, multiple state models. We will also introduce and review key concepts from probability theory and interest theory, as needed.  The material for this class will cover chapters 1-6 and 8 of the textbook, with extra material from other texts as needed.</p>
-<p>Prerequisite: MA 241 or MA 231 (Specifically, computing integrals and working with finite and infinite series).</p>
-<p>Corequisite: One of MA 421, BUS[ST] 350, ST 301, ST 305, ST 311, ST 361, ST 370, ST 371, ST 380 (Specifically, material on random variables).</p>
+<p>Actuarial science is the discipline that applies mathematical and statistical methods to assess risk in insurance, finance, and other industries and professions. To become an actuary, one must pass a series of specialized exams on actuarial mathematics. This course covers (some of) the material for SOA Exam MLC: Models for Life Contingencies and SOA Exam FM: Financial Mathematics. Specifically, the course covers survival models, life tables, selection, insurance benefits, annuities, premium calculation, and time permitting, multiple state models. We will also introduce and review key concepts from probability theory and interest theory, as needed.  The material for this class will cover chapters 1-6 and 8 of the textbook, with extra material from other texts as needed.</p>
+<p>Prerequisite: MA 241 or MA 231. <em>(Specifically, computing integrals and working with finite and infinite series.)</em></p>
+<p>Corequisite: One of MA 421, BUS[ST] 350, ST 301, ST 305, ST 311, ST 361, ST 370, ST 371, ST 380 (specifically, material on random variables).</p>
 <p><em>GEP Mathematical Sciences.</em></p>
 <hr />
 <h3 id="learning-objectives">Learning Objectives</h3>
+<p>By the end of this course, students should be able to:</p>
 <ol>
-<li>State key definitions and formulas in actuarial science.</li>
-<li>Use actuarial notation and connect it to related notation from probability and statistics.</li>
-<li>Apply main results in actuarial science of life contingencies to solve freshly encountered problems.</li>
+<li>
+<p><strong>Describe</strong> the main concepts, assumptions, and notation used in actuarial mathematics for life contingencies.</p>
+</li>
+<li>
+<p><strong>Interpret and use</strong> actuarial notation, and <strong>translate</strong> between actuarial notation and related notation from probability and statistics.</p>
+</li>
+<li>
+<p><strong>Compute and interpret</strong> probabilities and expectations associated with survival models, life tables, and future lifetime random variables.</p>
+</li>
+<li>
+<p><strong>Apply</strong> the tools of interest theory to calculate present values, accumulated values, and annuity values.</p>
+</li>
+<li>
+<p><strong>Calculate</strong> the values of insurance benefits, life contingent annuities, and premiums in a variety of actuarial models.</p>
+</li>
+<li>
+<p><strong>Analyze and solve</strong> unfamiliar actuarial problems by choosing appropriate formulas, notation, and modeling assumptions.</p>
+</li>
 </ol>
 <hr />
 <h3 id="course-structure">Course Structure</h3>
 <h4 id="lecture-materials">Lecture Materials</h4>
 <p>The material for this class is covered in 21 lectures, recorded specifically for this online course by Dr. Seth Sullivant. Each week you will watch one (5 weeks) or two (8 weeks) video lectures, take a quiz, and complete a homework assignment. With some exceptions, quizzes will be due on Wednesdays and homework assignments will be due on Fridays.</p>
+<p>In this online asynchronous course, the video content is designed to approximate the 150 minutes of weekly contact time typical of a regular semester course. However, please note that the duration of video content may vary from week to week. Some weeks may feature more than 150 minutes of videos, while others may have less.</p>
+<p>You may shift your viewing schedule each week to accommodate your own schedule. However, please keep in mind that this online, distance-education course is fast-paced, and it may become difficult to catch up if you fall behind.</p>
 <h4 id="live-sessions">Live sessions</h4>
-<p>TBD.</p>
+<p>TBD</p>
 <hr />
 <h3 id="communication-and-getting-help">Communication and Getting Help</h3>
 <h4 id="forum">Forum</h4>
-<p>The course will use a <strong>Moodle Discussion Forum</strong> for asking and answering questions regarding the homework, exam preparation, and logistics. If you have a question, then one of your classmates may have already asked it on the forum; if not, you can make a new post. Students can answer each other’s questions, and instructors will monitor the forum regularly.</p>
+<p>We will use <strong>Piazza</strong> for class discussion and homework questions. You are encouraged to use Piazza to discuss concepts and homework with discretion-hints and suggestions are okay, but full solutions will be deleted. You can post under your name or you may be anonymous to your classmates; however, the instructor will be able to see who you are. Please be respectful of your fellow classmates' ideas and attempts. If you have a math question you are not sure should be a public post, it is better to send me a direct message as a private post on Piazza.</p>
+<p>Enroll in this class Piazza through the Piazza link near the top of Moodle.</p>
+<p>Request: when asking a question about a specific item (like an item in Moodle), please include a direct link to that item (e.g. the Moodle url). It helps everyone answer your question a lot faster.</p>
 <h4 id="email">Email</h4>
 <p>Contact me for confidential and private discussions about grades, scheduling office hours, etc. Please include MA 412 in the subject line. In general, I may not respond to messages outside of business hours (M-F, 9am-5pm), and it may take 24-72 hours for me to respond to an message. Math questions are generally best asked in office hours or on our forum, not by email.</p>
-<h4 id="tutoring-centers">Tutoring Centers</h4>
-<p>During the regular school year, there is free help available on campus for MA 412. See the following links:</p>
-<ul>
-<li><a href="https://math.sciences.ncsu.edu/undergraduate/courses-faq/math-multimedia-center/">Math Tutoring Center (MTC)</a> in SAS 2105. This room has many computers available so that you can work on your assignments. The room is a low-stress environment: you may work quietly in the room without engaging a tutor, or you may ask questions of the graduate tutors when they are available.</li>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/drop-in-tutoring/">Academic Success Center (ASC)</a> in D.H. Hill Library has a few options:<ul>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/drop-in-tutoring/">ASC Drop-In Tutoring</a></li>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/appointment-tutoring/">ASC Appointment Tutoring</a></li>
-<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/weekly-group-tutoring/">ASC Weekly Group Tutoring</a></li>
-</ul>
-</li>
-</ul>
-<p>For Drop-In Tutoring hours, notice the MTC is open during the day, and the ASC is open in the evening.</p>
-<p>We encourage and expect you to work together with your classmates on homework assignments and studying, either remotely or in person.</p>
 <hr />
 <h3 id="textbook">Textbook</h3>
-<h4 id="required-text">Required text</h4>
-<p>Dickson, Hardy, and Waters, <em>Actuarial Mathematics for Life‑Contingent Risks</em>, 2nd ed., Cambridge University Press. ISBN: 978-1107044074.</p>
-<p>Electronic access: <a href="https://catalog.lib.ncsu.edu/catalog/NCSU2280820">Library catalog entry for Actuarial Mathematics for Life‑Contingent Risks</a> — available electronically through NC State University Libraries (access may require NC State credentials).</p>
-<h4 id="optional-supplemental-texts">Optional supplemental texts</h4>
+<p>We will use the following text:</p>
+<blockquote>
+<p>Dickson, Hardy, and Waters, <em>Actuarial Mathematics for Life Contingent Risks</em>, Cambridge University Press, 2nd Edition. ISBN-13: 978-1107044074.</p>
+</blockquote>
+<p>You may also use the online version available through the NC State library:</p>
+<p><a href="https://catalog.lib.ncsu.edu/catalog/NCSU2280820">NC State Library catalog entry for <em>Actuarial Mathematics for Life Contingent Risks</em></a></p>
+<h3 id="optional-supplemental-texts">Optional Supplemental Texts</h3>
 <ul>
-<li>Dickson, Hardy, and Waters, <em>Solution Manual for Actuarial Mathematics for Life‑Contingent Risks</em>, Cambridge University Press, 2nd ed.</li>
-<li>Kellison, <em>The Theory of Interest</em>. (Scans of the first three chapters are provided on the Moodle site; this book is also useful for SOA Exam FM: Financial Mathematics.)</li>
+<li>Dickson, Hardy, and Waters, <em>Solution Manual for Actuarial Mathematics for Life Contingent Risks</em>, Cambridge University Press, 2nd Edition.</li>
+<li>Kellison, <em>The Theory of Interest</em>. I will provide scans of the first three chapters on the Moodle site, which is all that is needed for this course. However, this book is used for the SOA Exam FM: Financial Mathematics and would be useful to have if you plan to take the actuarial exams to become an actuary.</li>
 </ul>
-<p>For library resources, see the NC State Libraries Course Reserves: <a href="https://reserves.lib.ncsu.edu/">Libraries Course Reserves</a></p>
+<p>Please visit <a href="https://reserves.lib.ncsu.edu/">Course Reserves</a>.</p>
+<h4 id="latex-resources">LaTeX Resources</h4>
+<h3 id="latex-resources_1">LaTeX resources</h3>
+<p>The links below provide learning materials and software for LaTeX. Additional resources are located in Moodle.</p>
+<ul>
+<li><a href="https://catalog.lib.ncsu.edu/record/NCSU2485558">Learning LaTeX — Griffiths &amp; Higham (NCSU library)</a> — Library record for the book "Learning LaTeX".</li>
+<li><a href="https://www.latex-project.org/">LaTeX Project — software and documentation</a> — Official LaTeX distribution and documentation.</li>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX">LaTeX Wikibook — comprehensive guide</a> — Community-maintained LaTeX reference and examples.</li>
+<li><a href="https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer">Getting started with LaTeX — primer (Trinity College Dublin)</a> — Introductory tutorial and examples.</li>
+<li><a href="https://miktex.org/">MiKTeX — easy-to-install LaTeX for Windows</a> — Windows installer and documentation for MiKTeX.</li>
+<li><a href="https://docs.moodle.org/38/en/Using_TeX_Notation">Using TeX notation in Moodle forums</a> — Moodle documentation for inserting math with TeX.</li>
+</ul>
 <hr />
 <h3 id="homework">Homework</h3>
-<h4 id="moodle-online-homework">Moodle Online Homework</h4>
-<p>Most weeks you will complete Moodle quizzes on the material, typically due Wednesdays at 11:59 PM. You should think of the Moodle quiz as another form of homework. The problems are multiple choice. There is no time limit so you can start and stop working on problems, discuss problems with other students, consult the book or lecture notes as you work, etc. Moodle quiz problems will tend to be numerical and somewhat shorter than the homework problems. There are two attempts per quiz.</p>
-<h4 id="written-peer-graded-homework">Written Peer-Graded Homework</h4>
-<p>Homework will be assigned on Moodle weekly and is typically due at 11:59 PM on Fridays (see the assignments in Moodle for specific dates). Homework will be submitted as a PDF through Gradescope. See <strong>Homework Preparation Guidelines</strong> on Moodle for information on how to prepare your homework.</p>
+<p>There are two types of homework in this class: written assignments in Gradescope and computer-based assignments in Moodle. The links to all homework assignments are available in Moodle and grades will appear in the Moodle Gradebook.</p>
+<p>No homework scores will be dropped, so be sure to follow the Course Calendar carefully.</p>
+<h4 id="moodle-quizzes">Moodle Quizzes</h4>
+<p>Each unit will contain a Moodle quiz; typically due at 11:00 PM on the listed day (see course schedule on Moodle for dates). You should think of the Moodle quiz as another form of homework. The problems are generally multiple choice. There is no time limit so you can start and stop working on problems, discuss problems with other students, consult the book or lecture notes as you work, etc. Moodle quiz problems will tend to be numerical and somewhat shorter than the homework problems. There are two attempts per quiz.</p>
+<h4 id="written-homework">Written Homework</h4>
+<p>Homework will be assigned on Moodle weekly and is typically due at 11:00 PM on the listed day (see course schedule on Moodle for dates). Homework will be submitted as a PDF through Gradescope. See Homework Preparation Guidelines on Moodle for information on how to prepare your homework.</p>
 <hr />
 <h3 id="test-information">Test Information</h3>
+<h4 id="test-dates">Test Dates</h4>
+<ul>
+<li>Test 1: </li>
+<li>Test 2: </li>
+<li>Final Exam: </li>
+</ul>
 <h4 id="proctors">Proctors</h4>
 <p>All examinations will be proctored through DELTA. You will either take your exam with DELTA, or coordinate remote proctoring with DELTA, according to which situation best describes you:</p>
 <ul>
 <li>If you live less than 50 miles away from Raleigh, NC, then you will take your tests on our campus through the Distance Education Testing Centers. Students should be mindful of closing hours for both Testing Centers, and give themselves plenty of time to complete their exams. For information, please visit <a href="https://testing-services.delta.ncsu.edu/testing-services-on-campus/">DELTA on-campus testing services.</a></li>
 <li>Those students who live more than 50 miles away from Raleigh, NC do not have to take their tests on NCSU campus. They may use a proctor in their town for testing. The proctor must be approved in advance through DELTA (not the instructor). It can take up to 1 week to verify a proctor and set up all needed contact info, so please do this early! Please visit the remote proctor website at <a href="https://testing-services.delta.ncsu.edu/testing-services-remote/">DELTA remote proctoring.</a></li>
 </ul>
-<p><strong>Sign up your preferred time/date now! Time slots fill up fast!</strong></p>
+<p>I encourage you to look through DELTA Testing Service's website, especially their <a href="https://testing-services.delta.ncsu.edu/frequently-asked-questions/">frequently asked questions (FAQs)</a>. Please note that if you are taking a paper exam at DELTA, it will be administered on an iPad.</p>
 <p><strong>Note:</strong> the word <em>remote</em> in this context means that you are using a professional testing site (for example, a testing center, a local library, a college, etc.) other than DELTA. Remote testing does not mean testing at home.</p>
 <h4 id="quick-links">Quick Links</h4>
-<div role="group" aria-label="DELTA and exam links" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;">
+<p>Please sign up your preferred time and date as soon as possible. Time slots fill up fast:</p>
+<div class="screen-only" role="group" aria-label="DELTA and exam links" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;">
     <a
         href="https://studentservices.ncsu.edu/calendars/exam-calendar/"
         target="_blank" rel="noopener noreferrer"
@@ -167,7 +325,7 @@
     </a>
 
     <a
-        href="https://ncsu.service-now.com/desp?id=kb_article_ml&sys_id=5d9e53bf83a9e690a35714326daad324&spa=1"
+        href="https://ncsu.service-now.com/desp?id=kb_article_ml&sys_id=f67c6908831b66d49a7074efeeaad3bd&spa=1"
         target="_blank" rel="noopener noreferrer"
         aria-label="Request to reschedule with DELTA — opens in a new tab"
         style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.4rem 0.75rem;border-radius:6px;text-decoration:none;color:#ffffff;font-weight:600;background:#212529;box-shadow:0 1px 2px rgba(0,0,0,0.2);"
@@ -175,28 +333,32 @@
         <span aria-hidden="true">↺</span>
         <span>Reschedule with DELTA</span>
     </a>
+
+    <a
+        href="https://testing-services.delta.ncsu.edu/frequently-asked-questions/"
+        target="_blank" rel="noopener noreferrer"
+        aria-label="Frequently Asked Questions (FAQs)"
+        style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.4rem 0.75rem;border-radius:6px;text-decoration:none;color:#ffffff;font-weight:600;background:#6c757d;box-shadow:0 1px 2px rgba(0,0,0,0.2);"
+        onfocus="this.style.outline='3px solid #ffd966';this.style.outlineOffset='2px';" onblur="this.style.outline='';">
+        <span aria-hidden="true">❓</span>
+        <span>DELTA FAQs</span>
+    </a>
 </div>
 
-<h4 id="test-dates">Test Dates</h4>
-<p>Here are the test dates for this course; as soon as possible, please sign up for a suitable time with your proctor:</p>
-<ul>
-<li>Test 1: TBD</li>
-<li>Test 2: TBD</li>
-<li>Test 3: TBD</li>
-<li>Final Exam: TBD</li>
-</ul>
+<p>You may reschedule an exam appointment directly with DELTA using the link above. You do not need to contact the instructor for permission, provided that your new appointment is scheduled within the exam's posted date range.</p>
+
+<div class="print-only">
+  <h3>DELTA and exam links</h3>
+  <ul>
+    <li><a href="https://studentservices.ncsu.edu/calendars/exam-calendar/">Your Final Exam Schedule</a></li>
+    <li><a href="https://testing-services.delta.ncsu.edu/testing-services-on-campus/on-campus-make-an-appointment/">On-Campus Testing (DELTA)</a></li>
+    <li><a href="https://testing-services.delta.ncsu.edu/testing-services-remote/">Off-Campus Proctoring</a></li>
+    <li><a href="https://ncsu.service-now.com/desp?id=kb_article_ml&sys_id=f67c6908831b66d49a7074efeeaad3bd&spa=1">Reschedule with DELTA</a></li>
+  </ul>
+</div>
+
 <h4 id="calculators">Calculators</h4>
-<p>The Society of Actuaries permits the following Texas Instruments calculator models for exams. Use one of these models for lectures, homework, quizzes, and exams:</p>
-<ul>
-<li>BA-35  </li>
-<li>BA II Plus  </li>
-<li>BA II Plus Professional  </li>
-<li>TI-30Xa  </li>
-<li>TI-30X II (IIS — solar or IIB — battery)  </li>
-<li>TI-30XS MultiView (or XB — battery)</li>
-</ul>
-<p>These calculators are inexpensive, have limited functionality (for example, no symbolic integration), and are well suited for course work and actuarial exams. If you are serious about becoming an actuary, purchase one now and use it consistently so you learn its functions and key‑press sequences.</p>
-<p>If you are on campus, you may rent a suitable calculator from the NC State Libraries: <a href="https://www.lib.ncsu.edu/devices/calculators">NC State Libraries — calculator rentals</a>.</p>
+<p>There are 6 calculator models that are permitted for the Society of Actuaries actuarial exams, all Texas Instruments, in the following models: BA-35, BA II Plus, BA II Plus Professional, TI-30Xa, TI-30X II (IIS solar or IIB battery), TI-30XS MultiView (or XB battery). If you are serious about becoming an actuary, purchase one of these calculators now and plan to use them on our exams and homework. They are all inexpensive and have a relatively limited functionality (e.g., no integrals). You will need a calculator of some sort and should plan to use it as you watch the lectures, work on homework and quizzes, and for exam days.</p>
 <h4 id="test-format">Test Format</h4>
 <p>Each exam will be taken as a Moodle quiz. If you select a remote proctor, your proctor must be able to administer this type of exam. You may not bring your own laptop to the testing center to take the exam.</p>
 <hr />
@@ -237,12 +399,10 @@
 <h4 id="grade-weighting-and-numerical-conversion">Grade Weighting and Numerical Conversion</h4>
 <p>Your grade will be determined by the following breakdown:</p>
 <ul>
-<li>Yellowdig: 5%</li>
 <li>Homework: 20%</li>
 <li>Quizzes: 10%</li>
-<li>Exam 1: 20%</li>
-<li>Exam 2: 20%</li>
-<li>Final Exam: 25%</li>
+<li>Midterm: 35%</li>
+<li>Final Exam: 35% </li>
 </ul>
 <p>Grades are tracked in real-time in the Moodle <strong>Gradebook</strong>.</p>
 <h4 id="conversion-from-numerical-grade-to-letter-grade">Conversion from Numerical Grade to Letter Grade</h4>
@@ -287,8 +447,7 @@
 <h3 id="course-schedule">Course Schedule</h3>
 <p>The course schedule is tentative and subject to change. Adjustments may be made to accommodate the pace of the class and unforeseen circumstances. All major changes will be announced in class and posted on Moodle.</p>
 <ul>
-<li><a href="/course_syllabi/MA412-601-calendar-2026-spring.html">Course Calendar (HTML)</a></li>
-<li><a href="/course_syllabi/MA412-601-calendar-2026-spring.pdf">Course Calendar (PDF)</a></li>
+<li>Course Calendar: <a href="https://bmaults.github.io/course_syllabi/MA412-601-calendar-summer.html">HTML</a></li>
 </ul>
 <h4 id="important-dates">Important Dates</h4>
 <p>For holidays and other university closures, please consult <a href="https://studentservices.ncsu.edu/calendars/academic/">the general NC State Academic Calendar.</a></p>
@@ -296,53 +455,19 @@
 <h4 id="list-of-topics">List of Topics</h4>
 <p>Here are the major topics of MA 412, with the approximate regular-semester time allocated to each:</p>
 <ul>
-<li>
-<p>Unit 1: Probability Review <em>(~1.5 weeks)</em></p>
-<ul>
-<li>Major topics include continuous and discrete random variables, probability density function, cumulative distribution function, expected value, variance, and conditional probability.</li>
+<li><strong>Unit 1: Probability Review (~1.5 weeks).</strong> Major topics include continuous and discrete random variables, probability density function, cumulative distribution function, expected value, variance, and conditional probability.</li>
+<li><strong>Unit 2: Survival Models (~1.5 weeks).</strong> Major topics include the future lifetime random variable, force of mortality, Gompertz' law, complete and curtate expected future lifetimes, and actuarial notation.</li>
+<li><strong>Unit 3: Life Tables (~2 weeks).</strong> Major topics include the interpretation of life tables, fractional age assumptions (uniform distribution of deaths, constant force of mortality), life insurance underwriting, select and ultimate survival models.</li>
+<li><strong>Unit 4: Interest Theory (~1.5 weeks).</strong> Major topics include simple and compound interest, discount factor, nominal and effective rates of interest and discount, basic annuities, present value, and accumulated value.</li>
+<li><strong>Unit 5: Insurance Benefits (~2.5 weeks).</strong> Major topics include the valuation of insurance benefits, whole life insurance, term insurance, pure endowment, and endowment insurance (continuous case, annual case, 1/mthly case), deferred insurance benefits, and approximation assumptions (uniform distribution of deaths, claims acceleration assumption).</li>
+<li><strong>Unit 6: Life Contingent Annuities (~2 weeks).</strong> Major topics include (whole life and term) annual life annuities (immediate and -due), annuities payable continuously, annuities payable m times per year, deferred annuities, and guaranteed annuities.</li>
+<li><strong>Unit 7: Premium Calculation (~2 weeks).</strong> Major topics include the present value of future loss random variable, the equivalence principle and portfolio percentile premium principle, net premium and gross premium calculations.</li>
 </ul>
-</li>
-<li>
-<p>Unit 2: Survival Models <em>(~1.5 weeks)</em></p>
-<ul>
-<li>Major topics include the future lifetime random variable, force of mortality, Gompertz' law, complete and curtate expected future lifetimes, and actuarial notation.</li>
-</ul>
-</li>
-<li>
-<p>Unit 3: Life Tables <em>(~2 weeks)</em></p>
-<ul>
-<li>Major topics include the interpretation of life tables, fractional age assumptions (uniform distribution of deaths, constant force of mortality), life insurance underwriting, select and ultimate survival models.</li>
-</ul>
-</li>
-<li>
-<p>Unit 4: Interest Theory <em>(~1.5 weeks)</em></p>
-<ul>
-<li>Major topics include simple and compound interest, discount factor, nominal and effective rates of interest and discount, basic annuities, present value, and accumulated value.</li>
-</ul>
-</li>
-<li>
-<p>Unit 5: Insurance Benefits <em>(~2.5 weeks)</em></p>
-<ul>
-<li>Major topics include the valuation of insurance benefits, whole life insurance, term insurance, pure endowment, and endowment insurance (continuous case, annual case, 1/mthly case), deferred insurance benefits, and approximation assumptions (uniform distribution of deaths, claims acceleration assumption).</li>
-</ul>
-</li>
-<li>
-<p>Unit 6: Life Contingent Annuities <em>(~2 weeks)</em></p>
-<ul>
-<li>Major topics include (whole life and term) annual life annuities (immediate and -due), annuities payable continuously, annuities payable m times per year, deferred annuities, and guaranteed annuities.</li>
-</ul>
-</li>
-<li>
-<p>Unit 7: Premium Calculation <em>(~2 weeks)</em></p>
-<ul>
-<li>Major topics include the present value of future loss random variable, the equivalence principle and portfolio percentile premium principle, net premium and gross premium calculations.</li>
-</ul>
-</li>
-</ul>
+<h4 id="course-continuity">Course Continuity</h4>
+<p>To ensure course continuity, changes made to the method of instructional delivery, course structure, course schedule, number of assignments, grading or other aspects of the course after the start of the term will be communicated to all students in written form (e.g., by an instructor announcement) when course changes are implemented.</p>
 <hr />
 <h3 id="additional-information">Additional Information</h3>
 <h4 id="student-expenses">Student Expenses</h4>
-<p>There are no expected expenses for this course.</p>
 <h4 id="late-assignments">Late Assignments</h4>
 <p>Generally no late assignments are accepted in this course. Please plan your work carefully and submit assignments by their stated deadlines. Extensions may be occasionally granted by the instructor for extenuating circumstances, which are best documented with <a href="https://osla.dasa.ncsu.edu/absence-verification-process/">NC State Absence Verification.</a></p>
 <p>For longer-term, recurring, or more serious illness or other interruptions to your participation in this class, you should reach out to your instructor as soon as you can.</p>
@@ -365,11 +490,11 @@
 <p>Students who receive accommodations are responsible for filing those accommodations officially with DRO before the tests occur. It is not appropriate to tell the instructor that you should receive accommodations without going through the official channels. The instructor will only adjust test conditions after receiving the official Accommodation Letter Notification from DRO. Adjustments are never made retroactively to past examinations.</p>
 <hr />
 <h3 id="digital-course-components">Digital Course Components</h3>
-<p>Because of the way our course is structured, students need internet connectivity in order to read course materials and complete assignments. NC State's Online and Distance Education provides <a href="https://online-distance.ncsu.edu/get-started/technology-requirements/">technology requirements and recommendations</a> for computer hardware.</p>
+<p>Because of the way our course is structured, students need internet connectivity in order to read course materials and complete assignments. NC State's Office of Information Technology (OIT) provides <a href="https://oit.ncsu.edu/information-for/students/">technology guidance</a>, including requirements and recommendations for computer hardware.</p>
 <p>For access to computing hardware, please see the NC State University Libraries <a href="https://www.lib.ncsu.edu/devices">Technology Lending</a> and the general <a href="https://www.lib.ncsu.edu/computing">Library Computing resources</a>. There are several computers available for use around campus, including in the <a href="https://math.sciences.ncsu.edu/undergraduate/courses-faq/math-multimedia-center/">Mathematics Tutoring Center</a>.</p>
 <p>Digitally hosted course components will include but are not limited to Moodle and Zoom.</p>
 <h4 id="software">Software</h4>
-<p>There are several resources available to assist students with technical or computer issues. Please consult <a href="https://oit.ncsu.edu/help-support">Office of Information Technology - NC State University</a>.</p>
+<p>There are several resources available to assist students with technical or computer issues. For technology help, please consult the <a href="https://oit.ncsu.edu/help/">Office of Information Technology</a> at NC State University.</p>
 <p>Here are some of the primary applications commonly used in online mathematics courses:</p>
 <ul>
 <li>
@@ -389,6 +514,14 @@
 </ul>
 </li>
 <li>
+<p><a href="https://piazza.com">Piazza</a>: this site hosts our class forum. You will use <strong>Piazza</strong> to ask questions regarding the lecture or homework.</p>
+<ul>
+<li><a href="https://piazza.com/product/accessibility">Piazza Accessibility Statement</a></li>
+<li><a href="https://piazza.com/legal/privacy">Piazza Privacy Policy</a></li>
+<li><a href="https://support.piazza.com/support/home">Piazza Support Center</a></li>
+</ul>
+</li>
+<li>
 <p><a href="https://meet.google.com">Google Meet</a>: when needed.</p>
 <ul>
 <li><a href="https://support.google.com/meet/answer/7313544?hl=en">Google Meet Accessibility features</a></li>
@@ -404,6 +537,14 @@
 <li><a href="https://support.zoom.com/hc">Zoom Support</a></li>
 </ul>
 </li>
+<li>
+<p><a href="https://www.gradescope.com/">Gradescope</a>: We will use Gradescope for collecting and returning written work.</p>
+<ul>
+<li><a href="https://help.gradescope.com/article/w73ayv69kf-gradescope-accessibility-information-and-resources">Gradescope Accessibility Information</a></li>
+<li><a href="https://www.gradescope.com/privacy">Gradescope Privacy Policy</a></li>
+<li><a href="https://help.gradescope.com/">Gradescope Help Center</a></li>
+</ul>
+</li>
 </ul>
 <p>You must address the accessibility of these websites for yourself during the course drop/add period. </p>
 <p>The instructor is not responsible for ensuring privacy or accessibility of electronic materials that are not required components of the course (e.g., links to supplemental information that is not part of the required reading list). However, the instructor will judiciously consider the privacy, copyright, and accessibility of supplemental links provided to students and warn them of any known issues or concerns in this regard. See Online Course Material Host Requirements (<a href="https://policies.ncsu.edu/regulation/reg-08-00-11/">NCSU REG 08.00.11</a>).</p>
@@ -414,15 +555,24 @@
 <hr />
 <h3 id="additional-nc-state-rules-and-regulations">Additional NC State Rules and Regulations</h3>
 <h4 id="your-rights-and-responsibilities">Your rights and responsibilities</h4>
-<p>Students are responsible for reviewing the NC State University Policies, Rules, and Regulations (PRRs) which pertain to their course rights and responsibilities, including those referenced both below and above in this syllabus:</p>
+<p>Students are responsible for reviewing the NC State University Policies, Rules, and Regulations (PRRs), which pertain to their course rights and responsibilities, including, but not limited to:</p>
 <ul>
-<li>Equal Opportunity and Non-Discrimination Policy Statement, <a href="https://policies.ncsu.edu/policy/pol-04-25-05">POL 04.25.05 - Equal Opportunity and Nondiscrimination Policy</a><br />
-with additional references at <a href="https://oied.ncsu.edu/equity/policies/">NC State Office of Equal Opportunity</a></li>
-<li>Code of Student Conduct, <a href="https://policies.ncsu.edu/policy/pol-11-35-01">POL 11.35.01 - Student Conduct</a></li>
-<li>Grades and Grade Point Average, <a href="https://policies.ncsu.edu/regulation/reg-02-50-03">REG 02.50.03 - Grades and Grade Point Average</a></li>
-<li>Credit-Only Courses, <a href="https://policies.ncsu.edu/regulation/reg-02-20-15">REG 02.20.15 - Credit-Only Courses</a></li>
-<li>Audits, <a href="https://policies.ncsu.edu/regulation/reg-02-20-04">REG 02.20.04 - Audits</a></li>
+<li><a href="https://policies.ncsu.edu/policy/pol-04-25-05">POL 04.25.05</a> Opportunity and Non-Discrimination Policy Statement<ul>
+<li><a href="https://policies.ncsu.edu/regulation/reg-02-20-01/">REG 02.20.01</a> Academic Accommodations for Students with Disabilities</li>
 </ul>
+</li>
+<li><a href="https://policies.ncsu.edu/policy/pol-11-35-01">POL 11.35.01</a> Student Conduct<ul>
+<li><a href="https://policies.ncsu.edu/regulation/reg-11-35-05/">REG 11.35.05</a> Code of Student Conduct</li>
+<li><a href="https://policies.ncsu.edu/regulation/reg-11-35-02/">REG 11.35.02</a> Student Discipline Procedures</li>
+</ul>
+</li>
+<li><a href="https://policies.ncsu.edu/regulation/reg-02-20-03/">REG 02.20.03</a> Attendance Regulations</li>
+<li><a href="https://policies.ncsu.edu/regulation/reg-02-50-03">REG 02.50.03</a> Grades and Grade Point Average</li>
+<li><a href="https://policies.ncsu.edu/regulation/reg-02-20-15">REG 02.20.15</a> Credit-Only Courses</li>
+<li><a href="https://policies.ncsu.edu/regulation/reg-02-20-04">REG 02.20.04</a> Audits</li>
+<li><a href="https://policies.ncsu.edu/regulation/reg-08-00-11/">REG 08.00.11</a> Online Course Material Host Requirements</li>
+</ul>
+<p>You may also find additional references at <a href="https://oied.ncsu.edu/equity/policies/">NC State Office of Equal Opportunity.</a></p>
 <h4 id="non-discrimination-policy">Non-Discrimination Policy</h4>
 <p>NC State University provides equality of opportunity in education and employment for all students and employees. Accordingly, NC State affirms its commitment to maintain a work environment for all employees and an academic environment for all students that is free from all forms of discrimination. Discrimination based on race, color, religion, creed, sex, national origin, age, disability, veteran status, or sexual orientation is a violation of state and federal law and/or NC State University policy and will not be tolerated. Harassment of any person (either in the form of quid pro quo or creation of a hostile environment) based on race, color, religion, creed, sex, national origin, age, disability, veteran status, or sexual orientation also is a violation of state and federal law and/or NC State University policy and will not be tolerated. Retaliation against any person who complains about discrimination is also prohibited. NC State's policies and regulations covering discrimination, harassment, and retaliation may be accessed at</p>
 <p><a href="http://policies.ncsu.edu/policy/pol-04-25-05">POL 04.25.05 - Equal Opportunity and Nondiscrimination Policy</a> or <a href="http://www.ncsu.edu/equal_op/">the Office of Equal Opportunity</a></p>
@@ -444,49 +594,24 @@ with additional references at <a href="https://oied.ncsu.edu/equity/policies/">N
 <li><a href="http://go.ncsu.edu/cesurvey">ClassEval website</a></li>
 <li><a href="http://oirp.ncsu.edu/surveys/classeval">Information about ClassEval and how the information is used</a></li>
 </ul>
+<h4 id="required-statement_1">Required statement</h4>
+<p>This course engages diverse scholarly perspectives to develop critical thinking, analysis, and debate and inclusion of a reading does not imply endorsement. <em>This statement is required per <a href="https://www.northcarolina.edu/apps/policy/doc.php?type=pdf&amp;id=3559">UNC Policy Manual 400.1.6,</a> adopted 12/19/2025.</em></p>
 <h4 id="syllabus-modification-statement">Syllabus Modification Statement</h4>
 <p>Our syllabus represents a flexible agreement. It outlines the topics we will cover and the order we will cover them in. Minor changes in the syllabus can occur if we need to slow down or speed up the pace of instruction.</p>
+<p>Per <a href="https://policies.ncsu.edu/regulation/reg-02-20-07/">REG 02.20.07 – Course Syllabus</a>, syllabi do <strong>not</strong> constitute an express or implied contract among the student, faculty, or institution. Rather, syllabi serve as a guide for the course. </p>
 <hr />
 <footer role="contentinfo" aria-label="Footer">
   <div style="padding:1rem; font-size:0.85rem; margin:0; text-align:center;">
     <p style="text-align:center;">
       This syllabus was designed by Bevin Maultsby to meet the
-      standards in REG 02.20.07 (Last Revised: May 27, 2020), found at
-      <a href="https://policies.ncsu.edu/regulation/reg-02-20-07/">NC State REG 02.20.07 - Course Syllabus</a>
-      according to the May 27, 2020 revision.
+      NC State University standards
+      <a href="https://policies.ncsu.edu/regulation/reg-02-20-07/">REG 02.20.07 - Course Syllabus</a>
+      (according to the February 3, 2026 revision) and to be WCAG 2.1 AA compliant.
     </p>
-    <p>Department of Mathematics · NC State University</p>
+  </div>
 </footer>
       </main>
     </div>
-
-<script>
-  (function () {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
-
-    document.documentElement.classList.add("reveal-ready");
-
-    // Mark elements you want to animate: cards, TOC, and content blocks
-    const targets = document.querySelectorAll(
-      ".content-card, .toc-container, .content-flow > *"
-    );
-
-    targets.forEach(el => el.classList.add("reveal"));
-
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add("reveal-in");
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.08 });
-
-    targets.forEach(el => obs.observe(el));
-  })();
-</script>
-
 
   </body>
 </html>
