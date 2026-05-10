@@ -5,9 +5,6 @@
     <title>Numerical Analysis I Syllabus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Global stylesheet for GitHub Pages -->
-    <link rel="stylesheet" href="/course_syllabi/styles.css" />
-
     <!-- Per-page overrides (keep this AFTER the global stylesheet) -->
     <style>
       /* Screen (HTML view) */
@@ -43,6 +40,16 @@
         h1 { font-size: 18pt; }
         h2 { font-size: 14pt; }
         h3 { font-size: 12pt; }
+
+        .syllabus-root table {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+
+        .syllabus-root table caption {
+          break-after: avoid;
+          page-break-after: avoid;
+        }
       }
 
       /* Default: screen */
@@ -211,22 +218,22 @@
 <p>Students are expected to master techniques of Numerical Analysis. By the end of this course, students will be able to:</p>
 <ol>
 <li>
-<p><strong>Select appropriate numerical methods</strong> for linear, nonlinear, and eigenvalue problems by analyzing problem structure, conditioning, stability, and computational constraints.</p>
+<strong>Select appropriate numerical methods</strong> for linear, nonlinear, and eigenvalue problems by analyzing problem structure, conditioning, stability, and computational constraints.
 </li>
 <li>
-<p><strong>Implement core numerical algorithms</strong> for linear systems, least squares problems, nonlinear equations, eigenvalue problems, and multigrid methods, and evaluate their performance.</p>
+<strong>Implement core numerical algorithms</strong> for linear systems, least squares problems, nonlinear equations, eigenvalue problems, and multigrid methods, and evaluate their performance.
 </li>
 <li>
-<p><strong>Analyze sources of numerical error</strong>, including floating-point effects, conditioning, and algorithmic instability, and use this analysis to diagnose method failure and guide method selection.</p>
+<strong>Analyze sources of numerical error</strong>, including floating-point effects, conditioning, and algorithmic instability, and use this analysis to diagnose method failure and guide method selection.
 </li>
 <li>
-<p><strong>Interpret convergence behavior and accuracy</strong> of numerical methods using theoretical tools such as error bounds, residuals, and conditioning estimates.</p>
+<strong>Interpret convergence behavior and accuracy</strong> of numerical methods using theoretical tools such as error bounds, residuals, and conditioning estimates.
 </li>
 <li>
-<p><strong>Use numerical software and computational tools responsibly</strong>, understanding both their capabilities and limitations.</p>
+<strong>Use numerical software and computational tools responsibly</strong>, understanding both their capabilities and limitations.
 </li>
 <li>
-<p><strong>Communicate numerical results professionally</strong>, including clear documentation of assumptions, method choices, limitations, and observed behavior in computational experiments.</p>
+<strong>Communicate numerical results professionally</strong>, including clear documentation of assumptions, method choices, limitations, and observed behavior in computational experiments.
 </li>
 </ol>
 <p>Homework and exams emphasize practical problem solving and computational reasoning, with theory used to justify algorithm choice, interpret results, and explain observed successes or failures.</p>
@@ -249,13 +256,13 @@
 <p>We will use free online textbooks which are provided on Moodle and which can also be found through <a href="https://reserves.lib.ncsu.edu/">NC State Library Course Reserves.</a></p>
 <ul>
 <li>
-<p>I. C. F. Ipsen, Numerical Matrix Analysis, SIAM, 2009. <a href="https://catalog.lib.ncsu.edu/record/NCSU2514760">Link</a></p>
+I. C. F. Ipsen, Numerical Matrix Analysis, SIAM, 2009. <a href="https://catalog.lib.ncsu.edu/record/NCSU2514760">Link</a>
 </li>
 <li>
-<p>C. T. Kelley, Iterative Methods for Linear and Nonlinear Equations, SIAM 1995. <a href="https://catalog.lib.ncsu.edu/record/NCSU2512957">Link</a></p>
+C. T. Kelley, Iterative Methods for Linear and Nonlinear Equations, SIAM 1995. <a href="https://catalog.lib.ncsu.edu/record/NCSU2512957">Link</a>
 </li>
 <li>
-<p>Desmond J. Higham and Nicholas J Higham, Matlab Guide: Second Edition, 2005. <a href="https://catalog.lib.ncsu.edu/record/NCSU3108706">Link</a></p>
+Desmond J. Higham and Nicholas J Higham, Matlab Guide: Second Edition, 2005. <a href="https://catalog.lib.ncsu.edu/record/NCSU3108706">Link</a>
 </li>
 </ul>
 <h4 id="latex-resources">LaTeX Resources</h4>
@@ -286,7 +293,7 @@
 <li>If you live less than 50 miles away from Raleigh, NC, then you will take your tests on our campus through the Distance Education Testing Centers. Students should be mindful of closing hours for both Testing Centers, and give themselves plenty of time to complete their exams. For information, please visit <a href="https://testing-services.delta.ncsu.edu/testing-services-on-campus/">DELTA on-campus testing services.</a></li>
 <li>Those students who live more than 50 miles away from Raleigh, NC do not have to take their tests on NCSU campus. They may use a proctor in their town for testing. The proctor must be approved in advance through DELTA (not the instructor). It can take up to 1 week to verify a proctor and set up all needed contact info, so please do this early! Please visit the remote proctor website at <a href="https://testing-services.delta.ncsu.edu/testing-services-remote/">DELTA remote proctoring.</a></li>
 </ul>
-<p>I encourage you to look through DELTA Testing Service's website, especially their <a href="https://testing-services.delta.ncsu.edu/frequently-asked-questions/">frequently asked questions (FAQs)</a>.</p>
+<p>I encourage you to look through DELTA Testing Service's website, especially their <a href="https://testing-services.delta.ncsu.edu/frequently-asked-questions/">frequently asked questions (FAQs)</a>. Please note that if you are taking a paper exam at DELTA, it will be administered on an iPad.</p>
 <p><strong>Note:</strong> the word <em>remote</em> in this context means that you are using a professional testing site (for example, a testing center, a local library, a college, etc.) other than DELTA. Remote testing does not mean testing at home.</p>
 <h4 id="quick-links">Quick Links</h4>
 <p>Please sign up your preferred time and date as soon as possible. Time slots fill up fast:</p>
@@ -366,7 +373,7 @@
 <h3 id="classroom-expectations">Classroom Expectations</h3>
 <ol>
 <li>
-<p><strong>Course Structure:</strong> This is an online class; you are responsible for your own learning and for pacing yourself within course guidelines.  </p>
+<strong>Course Structure:</strong> This is an online class; you are responsible for your own learning and for pacing yourself within course guidelines.  
 <ul>
 <li>Watch the video lectures scheduled each week and follow the Course Calendar.  </li>
 <li>Track all due dates in Moodle and on the Course Calendar.  </li>
@@ -376,19 +383,19 @@
 </ul>
 </li>
 <li>
-<p><strong>Communication and announcements:</strong> Please check your email, the course forum, and the Moodle site regularly. All announcements sent by email will also be saved under Announcements on Moodle. You are responsible for knowing the content of course emails.</p>
+<strong>Communication and announcements:</strong> Please check your email, the course forum, and the Moodle site regularly. All announcements sent by email will also be saved under Announcements on Moodle. You are responsible for knowing the content of course emails.
 </li>
 <li>
-<p><strong>Respect and professionalism:</strong> Treat everyone in class (students and instructor) with respect and courtesy. Be active and prepared in any live sessions. Come to office hours ready to ask questions and communicate with others.</p>
+<strong>Respect and professionalism:</strong> Treat everyone in class (students and instructor) with respect and courtesy. Be active and prepared in any live sessions. Come to office hours ready to ask questions and communicate with others.
 </li>
 <li>
-<p><strong>Accountability:</strong> You are responsible for resolving any confusion about assignments, due dates, exams, accommodations, etc., in a prompt manner.</p>
+<strong>Accountability:</strong> You are responsible for resolving any confusion about assignments, due dates, exams, accommodations, etc., in a prompt manner.
 </li>
 <li>
-<p><strong>Academic integrity:</strong> Do not submit work that is not yours. It is understood that your name on any assignment indicates your adherence to the NC State Honor Pledge: "I have neither given nor received unauthorized aid on this test or assignment."</p>
+<strong>Academic integrity:</strong> Do not submit work that is not yours. It is understood that your name on any assignment indicates your adherence to the NC State Honor Pledge: "I have neither given nor received unauthorized aid on this test or assignment."
 </li>
 <li>
-<p><strong>Exam device policy:</strong> Review the permitted items before each exam. Keep phones and other forbidden devices powered off and stored away during exams to avoid accidental use.</p>
+<strong>Exam device policy:</strong> Review the permitted items before each exam. Keep phones and other forbidden devices powered off and stored away during exams to avoid accidental use.
 </li>
 </ol>
 <h4 id="student-success">Student Success</h4>
@@ -500,7 +507,7 @@
 <p>Here are some of the primary applications commonly used in online mathematics courses:</p>
 <ul>
 <li>
-<p><a href="https://wolfware.ncsu.edu/">Moodle and Wolfware</a>: Our course is hosted online on Moodle, where you can find the course content, a link to this syllabus, and the gradebook. </p>
+<a href="https://wolfware.ncsu.edu/">Moodle and Wolfware</a>: Our course is hosted online on Moodle, where you can find the course content, a link to this syllabus, and the gradebook. 
 <ul>
 <li><a href="https://moodle.org/mod/page/view.php?id=8753">Moodle Accessibility Statement</a></li>
 <li><a href="https://moodle.com/privacy-notice/">Moodle Privacy Notice</a></li>
@@ -508,7 +515,7 @@
 </ul>
 </li>
 <li>
-<p><a href="https://ncsu.hosted.panopto.com/Panopto/">Panopto</a>: NC State uses Panopto for video hosting.</p>
+<a href="https://ncsu.hosted.panopto.com/Panopto/">Panopto</a>: NC State uses Panopto for video hosting.
 <ul>
 <li><a href="https://support.panopto.com/s/article/Learn-About-Accessibility-Features&amp;sa=D&amp;source=editors&amp;ust=1692555081911980&amp;usg=AOvVaw02s9vfwWJ20-med8HKgbCq">Panopto Accessibility Features</a></li>
 <li><a href="https://www.panopto.com/privacy/">Panopto Privacy Policy</a></li>
@@ -516,7 +523,7 @@
 </ul>
 </li>
 <li>
-<p><a href="https://piazza.com">Piazza</a>: this site hosts our class forum. You will use <strong>Piazza</strong> to ask questions regarding the lecture or homework.</p>
+<a href="https://piazza.com">Piazza</a>: this site hosts our class forum. You will use <strong>Piazza</strong> to ask questions regarding the lecture or homework.
 <ul>
 <li><a href="https://piazza.com/product/accessibility">Piazza Accessibility Statement</a></li>
 <li><a href="https://piazza.com/legal/privacy">Piazza Privacy Policy</a></li>
@@ -524,7 +531,7 @@
 </ul>
 </li>
 <li>
-<p><a href="https://meet.google.com">Google Meet</a>: when needed.</p>
+<a href="https://meet.google.com">Google Meet</a>: when needed.
 <ul>
 <li><a href="https://support.google.com/meet/answer/7313544?hl=en">Google Meet Accessibility features</a></li>
 <li><a href="https://support.google.com/meet/answer/9852160?hl=en">Google Meet Security and Privacy</a></li>
@@ -532,7 +539,7 @@
 </ul>
 </li>
 <li>
-<p><a href="https://ncsu.zoom.us/">Zoom</a>: when needed.</p>
+<a href="https://ncsu.zoom.us/">Zoom</a>: when needed.
 <ul>
 <li><a href="https://www.zoom.com/en/accessibility/">Zoom Accessibility Statement</a></li>
 <li><a href="https://www.zoom.com/en/trust/privacy/privacy-statement/">Zoom Privacy Policy</a></li>
@@ -540,7 +547,7 @@
 </ul>
 </li>
 <li>
-<p><a href="https://www.gradescope.com/">Gradescope</a>: We will use Gradescope for collecting and returning written work.</p>
+<a href="https://www.gradescope.com/">Gradescope</a>: We will use Gradescope for collecting and returning written work.
 <ul>
 <li><a href="https://help.gradescope.com/article/w73ayv69kf-gradescope-accessibility-information-and-resources">Gradescope Accessibility Information</a></li>
 <li><a href="https://www.gradescope.com/privacy">Gradescope Privacy Policy</a></li>
