@@ -53,7 +53,7 @@ Syllabi for online mathematics courses. These are intended to provide guidance; 
 - MA 513-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA513-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA513-601.pdf)
     - [Fall Calendar](https://bmaults.github.io/course_syllabi/MA513-601-calendar-fall.html)
 - MA 520-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA520-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA520-601.pdf)
-    - [Spring Calendar](https://bmaults.github.io/course_syllabi/MA520-601-calendar-spring.html)-->
+    - [Fall Calendar](https://bmaults.github.io/course_syllabi/MA520-601-calendar-fall.html)
 - MA 523-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA523-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA523-601.pdf)
     - [Spring Calendar](https://bmaults.github.io/course_syllabi/MA523-601-calendar-spring.html)
     - [Summer Calendar](https://bmaults.github.io/course_syllabi/MA523-601-calendar-summer.html)
