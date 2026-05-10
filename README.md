@@ -39,20 +39,28 @@ Syllabi for online mathematics courses. These are intended to provide guidance; 
 - MA 305: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA305-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA305-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA305-601-calendar-spring.html)
 - MA 341: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA341-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA341-601.pdf)
     - [Summer Calendar](https://bmaults.github.io/course_syllabi/MA341-601-calendar-summer.html)
-<!--- - MA 405-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA405-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA405-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA405-601-calendar-spring.html)-->
+<!-- - MA 405-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA405-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA405-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA405-601-calendar-spring.html)-->
 - MA 412-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA412-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA412-601.pdf)
     - [Summer Calendar](https://bmaults.github.io/course_syllabi/MA412-601-calendar-summer.html)
     - [Fall Calendar](https://bmaults.github.io/course_syllabi/MA412-601-calendar-fall.html)
-- MA 507-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA507-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA507-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA507-601-calendar-spring.html)
+<!-- - MA 507-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA507-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA507-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA507-601-calendar-spring.html)
 - MA 508-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA508-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA508-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA508-601-calendar-spring.html)
 - MA 509-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA509-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA509-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA509-601-calendar-spring.html)-->
-- MA 510-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA510-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA510-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA510-601-calendar-spring.html)
-- MA 511-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA511-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA511-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA511-601-calendar-spring.html)
-- MA 513-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA513-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA513-601.pdf), [Fall Calendar](https://bmaults.github.io/course_syllabi/MA513-601-calendar-fall.html)
-- MA 520-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA520-601.html), <!--[Syllabus PDF](https://bmaults.github.io/course_syllabi/MA520-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA520-601-calendar-spring.html)-->
-- MA 523-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA523-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA523-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA523-601-calendar-spring.html)
+- MA 510-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA510-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA510-601.pdf)
+    - [Spring Calendar](https://bmaults.github.io/course_syllabi/MA510-601-calendar-spring.html)
+- MA 511-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA511-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA511-601.pdf)
+    - [Spring Calendar](https://bmaults.github.io/course_syllabi/MA511-601-calendar-spring.html)
+- MA 513-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA513-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA513-601.pdf)
+    - [Fall Calendar](https://bmaults.github.io/course_syllabi/MA513-601-calendar-fall.html)
+- MA 520-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA520-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA520-601.pdf)
+    - [Spring Calendar](https://bmaults.github.io/course_syllabi/MA520-601-calendar-spring.html)-->
+- MA 523-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA523-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA523-601.pdf)
+    - [Spring Calendar](https://bmaults.github.io/course_syllabi/MA523-601-calendar-spring.html)
+    - [Summer Calendar](https://bmaults.github.io/course_syllabi/MA523-601-calendar-summer.html)
 <!--- MA 540-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA540-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA540-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA540-601-calendar-spring.html)-->
-- MA 580-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA580-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA580-601.pdf), [Spring Calendar](https://bmaults.github.io/course_syllabi/MA580-601-calendar-spring.html)
+- MA 580-601: [Syllabus HTML](https://bmaults.github.io/course_syllabi/MA580-601.html), [Syllabus PDF](https://bmaults.github.io/course_syllabi/MA580-601.pdf)
+    - [Spring Calendar](https://bmaults.github.io/course_syllabi/MA580-601-calendar-spring.html)
+    - [Summer Calendar](https://bmaults.github.io/course_syllabi/MA580-601-calendar-summer.html)
 
 
 Archive:
