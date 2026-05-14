@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Linear Transformations and Matrix Theory Syllabus</title>
+    <title>Topics in Contemporary Mathematics Syllabus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Per-page overrides (keep this AFTER the global stylesheet) -->
@@ -73,7 +73,7 @@
         margin: 1in 0.9in 0.95in 0.9in;
 
         @bottom-left {
-          content: "MA 523-651 Syllabus";
+          content: "MA 103-651 Syllabus";
           font-size: 9pt;
           color: #666;
         }
@@ -133,10 +133,10 @@
     >
 
       <h1>
-      MA 523-651 Summer 2026
+      MA 103-651 Summer 2026
       </h1>
 
-      <h2>Linear Transformations and Matrix Theory Course Syllabus</h2>
+      <h2>Topics in Contemporary Mathematics Course Syllabus</h2>
 
       <p class="meta screen-only">
         Department of Mathematics · NC State University
@@ -145,7 +145,7 @@
       
       <!-- SCREEN-ONLY: visible on the web, hidden in PDF/print -->
       <p class="screen-only">
-        <a href="https://bmaults.github.io/course_syllabi/MA523-601.pdf" target="_blank" rel="noopener">
+        <a href="https://bmaults.github.io/course_syllabi/MA103-601-syllabus-supplement.pdf" target="_blank" rel="noopener">
           View, download, or print this syllabus as a PDF
         </a>
       </p>
@@ -154,7 +154,7 @@
       
       <!-- PRINT-ONLY: shows up in the PDF/printout -->
       <p class="print-only">
-        <a href="https://bmaults.github.io/course_syllabi/MA523-601.html">
+        <a href="https://bmaults.github.io/course_syllabi/MA103-601-syllabus-supplement.html">
           Click here for an HTML version of this syllabus
         </a>
       </p>
@@ -165,17 +165,12 @@
         <h2>Table of Contents</h2>
         <div class="toc">
 <ul>
-<li><a href="#course-description">Course Description</a></li>
-<li><a href="#learning-objectives">Learning Objectives</a></li>
 <li><a href="#course-structure">Course Structure</a></li>
 <li><a href="#communication-and-getting-help">Communication and Getting Help</a></li>
-<li><a href="#textbooks">Textbooks</a></li>
-<li><a href="#latex-resources">LaTeX resources</a></li>
 <li><a href="#homework">Homework</a></li>
 <li><a href="#test-information">Test Information</a></li>
 <li><a href="#classroom-expectations">Classroom Expectations</a></li>
 <li><a href="#grading">Grading</a></li>
-<li><a href="#course-schedule">Course Schedule</a></li>
 <li><a href="#additional-information">Additional Information</a></li>
 <li><a href="#digital-course-components">Digital Course Components</a></li>
 <li><a href="#additional-nc-state-rules-and-regulations">Additional NC State Rules and Regulations</a></li>
@@ -189,12 +184,12 @@
         
           <h3 id="course-information">Course Information</h3>
           <ul>
-            <li><strong>Instructor:</strong> Harshit Bhatt</li>
+            <li><strong>Instructor:</strong> Alyssa Wenzel</li>
             <li><strong>Email:</strong>
-              <a href="mailto:hbhatt@ncsu.edu">Email me at hbhatt@ncsu.edu</a>
+              <a href="mailto:aoswald2@ncsu.edu">Email me at aoswald2@ncsu.edu</a>
             </li>
-            <li><strong>Office:</strong> 3149 SAS Hall</li>
-            <li><strong>Office Hours:</strong> Monday 2 - 3 pm, Tuesday 1-2 pm</li>
+            <li><strong>Office:</strong> Cox 406F</li>
+            <li><strong>Office Hours:</strong> By Appointment Calendar</li>
             <li><strong>Course Modality:</strong>
               This course is an online, asynchronous Distance Education course.
             </li>
@@ -207,83 +202,91 @@
 
         <hr />
 
-        <h3 id="course-description">Course Description</h3>
-<p>(3 credit hours) Vector spaces, linear transformations and matrices, orthogonality, orthogonal transformations with emphasis on rotations and reflections, matrix norms, projectors, least squares, generalized inverses, definite matrices, singular values.</p>
-<p><em>Prerequisites.</em> An undergraduate linear algebra class, such as MA305 or MA405.</p>
-<hr />
-<h3 id="learning-objectives">Learning Objectives</h3>
-<p>Upon completion of this course, students will be able to master the following:</p>
-<ul>
-<li>The mathematical concepts of matrices and vectors, and their basic operations (inner product, transpose,
-scalar multiplication, addition, multiplication, and outer product), and their time complexity.</li>
-<li>The mathematical problems of solving linear systems and least squares problems, and the existence and
-uniqueness of their solutions.</li>
-<li>The fundamental matrix decompositions (pivoted LU, Cholesky, QR), and their use in the solution of linear
-systems and least squares problems.</li>
-<li>The Singular Value decomposition (SVD), and its use for the solution of least squares problems and low-
-rank approximation of matrices. </li>
-<li>Generation and manipulation of matrices in Matlab, and the fundamental Matlab commands.</li>
-<li>The properties of floating point arithmetic and its effect on the accuracy of matrix operations.</li>
-<li>The concept of sensitivity of a mathematical problem to perturbations (conditioning), and the behavior of
-matrix operations in floating point arithmetic (numerical stability).</li>
-</ul>
+        <p>Welcome to MA 103! This course is designed to introduce you, the students, to applications of mathematics that lie outside of STEM fields and which have seen major innovations in the last century. The course also aims to expand your notions of what mathematics and mathematical reasoning entail and what sorts of fields they can be applied to, and to build your confidence in engaging with mathematical reasoning. This semester, we’ll be focusing on three main topics: voting theory, network analysis, and cryptography.</p>
 <hr />
 <h3 id="course-structure">Course Structure</h3>
-<p>Learning activities include reading assignments, quizzes, videos, homework assignments, Matlab programs, and exams.</p>
 <h4 id="lecture-materials">Lecture Materials</h4>
-<p>This course is completely asynchronous, which means that students have no real-time class meeting
-requirements. Learning materials, activities, assignments, and assessments are delivered through Moodle, a secure and easy-to-use online learning platform.</p>
-<p>The course consists of 5 modules, each of which lasts between one to several weeks.</p>
+<p>Your primary instruction for this online course will be through watching the lecture videos posted on the Moodle site. These videos were recorded by Dr. Stepan Paul from NC State specifically for this section of MA 103. They are organized into 26 lessons, each of which corresponds roughly to one class meeting (most lessons contain more than one video). The videos have embedded questions that you’ll need to answer along the way, which are designed to give you immediate practice with the material and keep you engaged with content. There are also Preview Questions for each lesson that should be completed before watching the corresponding videos. These are designed to get you thinking about the questions that will be addressed in the videos.</p>
 <h4 id="live-sessions">Live sessions</h4>
-<p>Will be discussed </p>
+<p>Wednesdays at 2pm</p>
+<h4 id="course-schedule">Course Schedule</h4>
+<p>The course schedule is tentative and subject to change. Adjustments may be made to accommodate the pace of the class and unforeseen circumstances. All major changes will be announced in class and posted on Moodle.</p>
+<ul>
+<li>Course Calendar: <a href="https://bmaults.github.io/course_syllabi/MA103-601-calendar-summer.html">HTML</a></li>
+</ul>
+<h4 id="important-dates">Important Dates</h4>
+<p>For holidays and other university closures, please consult <a href="https://studentservices.ncsu.edu/calendars/academic/">the general NC State Academic Calendar.</a></p>
+<p>Your final exam schedule is already determined; find it here: <a href="https://studentservices.ncsu.edu/calendars/exam/">NC State Final Exam Calendar.</a> You are responsible for reviewing your final exam sessions to arrange a suitable time for this course.</p>
+<h4 id="list-of-topics">List of Topics</h4>
+<p>Here are the major topics of MA 103, with the approximate regular-semester time allocated to each:</p>
+<ul>
+<li>
+Unit 1: Voting and Social Choice Theory <em>(approximately 4 weeks)</em>
+<ul>
+<li>Intro to voting theory, preference ballots, plurality, Borda count</li>
+<li>Strategic voting, IRV, Pairwise comparison, Condorcet and Majority Conditions</li>
+<li>Independence of irrelevant alternatives, Arrow's theorem, intro to weighted voting</li>
+<li>Dictators, veto power, and dummy players in weighted voting</li>
+<li>Modeling power, Banzhaf Power Index</li>
+</ul>
+</li>
+<li>
+Unit 2: Graph Theory, Algorithms, and Network Modeling <em>(approximately 4 weeks)</em>
+<ul>
+<li>Intro to graph theory, Euler paths</li>
+<li>Fleury's algorithm, shortest path problem, Dijkstra's algorithm</li>
+<li>Traveling salesperson problem, brute force and nearest neighbor algorithms</li>
+<li>Optimality and efficiency, scheduling problems and digraphs</li>
+<li>Modeling internet traffic and social media influence</li>
+</ul>
+</li>
+<li>
+Unit 3: Cryptography and Number Theory <em>(approximately 3 weeks)</em>
+<ul>
+<li>Intro to cryptography, Caesar cipher</li>
+<li>Substitution cipher, frequency attacks, modular arithmetic</li>
+<li>Vigenere cipher, key exchange problem, exponents and logarithms</li>
+<li>Modular exponentiation, Diffie Hellman key exchange, public key cryptography</li>
+</ul>
+</li>
+</ul>
+<h4 id="course-continuity">Course Continuity</h4>
+<p>To ensure course continuity, changes made to the method of instructional delivery, course structure, course schedule, number of assignments, grading or other aspects of the course after the start of the term will be communicated to all students in written form (e.g., by an instructor announcement) when course changes are implemented.</p>
 <hr />
 <h3 id="communication-and-getting-help">Communication and Getting Help</h3>
 <h4 id="forum">Forum</h4>
-<p>We will use <strong>Piazza</strong> for class discussion and homework questions. You are encouraged to use Piazza to discuss concepts and homework with discretion-hints and suggestions are okay, but full solutions will be deleted. You can post under your name or you may be anonymous to your classmates; however, the instructor will be able to see who you are. Please be respectful of your fellow classmates' ideas and attempts. If you have a math question you are not sure should be a public post, it is better to send me a direct message as a private post on Piazza.</p>
-<p>Enroll in this class Piazza through the Piazza link near the top of Moodle.</p>
-<p>Request: when asking a question about a specific item (like an item in Moodle), please include a direct link to that item (e.g. the Moodle url). It helps everyone answer your question a lot faster.</p>
+<p>The course will use a <strong>Moodle Discussion Forum</strong> for asking and answering questions regarding the homework, exam preparation, and logistics. If you have a question, then one of your classmates may have already asked it on the forum; if not, you can make a new post. Students can answer each other’s questions, and instructors will monitor the forum regularly.</p>
 <h4 id="email">Email</h4>
-<p>Contact me for confidential and private discussions about grades, scheduling office hours, etc. Please include MA 523 in the subject line. In general, I may not respond to messages outside of business hours (M-F, 9am-5pm), and it may take 24-72 hours for me to respond to an message. Math questions are generally best asked in office hours or on our forum, not by email.</p>
-<hr />
-<h3 id="textbooks">Textbooks</h3>
-<p>We will use free online textbooks which can also be found through the <a href="https://www.lib.ncsu.edu/">NC State Library</a>:</p>
+<p>Contact me for confidential and private discussions about grades, scheduling office hours, etc. Please include MA 103 in the subject line. In general, I may not respond to messages outside of business hours (M-F, 9am-5pm), and it may take 24-72 hours for me to respond to an message. Math questions are generally best asked in office hours or on our forum, not by email.</p>
+<h4 id="tutoring-centers">Tutoring Centers</h4>
+<p>During the regular school year, there is free help available on campus for MA 103. See the following links:</p>
 <ul>
-<li>
-I. C. F. Ipsen: <a href="https://catalog.lib.ncsu.edu/record/NCSU2514760">Numerical Matrix Analysis</a>
-</li>
-<li>
-Åke Björck: <a href="https://catalog.lib.ncsu.edu/record/NCSU3309058">Numerical Methods in Matrix Computations</a>
-</li>
-<li>
-Roger A. Horn and Charles R. Johnson: <a href="https://catalog.lib.ncsu.edu/record/NCSU2728818">Matrix Analysis, 2. edition</a>
-</li>
-<li>
-David S. Watkins: <a href="https://catalog.lib.ncsu.edu/record/NCSU2664449">Fundamentals of Matrix Computations</a>
-</li>
-<li>
-P. J. Olver and C. Shakiban: <a href="https://catalog.lib.ncsu.edu/catalog/NCSU4441965">Applied Linear Algebra</a>
+<li><a href="https://math.sciences.ncsu.edu/undergraduate/courses-faq/math-multimedia-center/">Math Tutoring Center (MTC)</a> in SAS 2105. This room has many computers available so that you can work on your assignments. The room is a low-stress environment: you may work quietly in the room without engaging a tutor, or you may ask questions of the graduate tutors when they are available.</li>
+<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/drop-in-tutoring/">Academic Success Center (ASC)</a> in D.H. Hill Library has a few options:<ul>
+<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/drop-in-tutoring/">ASC Drop-In Tutoring</a></li>
+<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/appointment-tutoring/">ASC Appointment Tutoring</a></li>
+<li><a href="https://asc.dasa.ncsu.edu/tutoring-and-mentoring/weekly-group-tutoring/">ASC Weekly Group Tutoring</a></li>
+</ul>
 </li>
 </ul>
-<h3 id="latex-resources">LaTeX resources</h3>
-<p>The links below provide learning materials and software for LaTeX. Additional resources are located in Moodle.</p>
-<ul>
-<li><a href="https://catalog.lib.ncsu.edu/record/NCSU2485558">Learning LaTeX — Griffiths &amp; Higham (NCSU library)</a> — Library record for the book "Learning LaTeX".</li>
-<li><a href="https://www.latex-project.org/">LaTeX Project — software and documentation</a> — Official LaTeX distribution and documentation.</li>
-<li><a href="https://en.wikibooks.org/wiki/LaTeX">LaTeX Wikibook — comprehensive guide</a> — Community-maintained LaTeX reference and examples.</li>
-<li><a href="https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer">Getting started with LaTeX — primer (Trinity College Dublin)</a> — Introductory tutorial and examples.</li>
-<li><a href="https://miktex.org/">MiKTeX — easy-to-install LaTeX for Windows</a> — Windows installer and documentation for MiKTeX.</li>
-<li><a href="https://docs.moodle.org/38/en/Using_TeX_Notation">Using TeX notation in Moodle forums</a> — Moodle documentation for inserting math with TeX.</li>
-</ul>
+<p>For Drop-In Tutoring hours, notice the MTC is open during the day, and the ASC is open in the evening.</p>
+<p>We encourage and expect you to work together with your classmates on homework assignments and studying, either remotely or in person.</p>
 <hr />
 <h3 id="homework">Homework</h3>
-<p>There are written assignments submitted via Gradescope, programming projects, Moodle quizzes (with infinitely many attempts).</p>
+<h4 id="moodle-online-homework">Moodle Online Homework</h4>
+<p>You will have online homework assignments through Moodle. These will typically be due on Wednesday nights at 11:59pm. Please always check the assignments themselves, as the due dates are posted for each one.</p>
+<h4 id="written-peer-graded-homework">Written Peer-Graded Homework</h4>
+<p>You will also have written assignments on Moodle. These are short answer questions that you’ll answer in paragraph form. You’ll have 1 or 2 of these per week. These will typically be due on Wednesday nights at 11:59pm, and the assessments will typically be due on Friday nights at 11:59pm. Late submissions are NOT allowed. </p>
+<p>You are also responsible for doing a peer assessment for each other's work on Moodle. A rubric is provided for each question, and you’ll be assigned 4 other students’ responses to evaluate. You’ll get a grade based on both how your response is evaluated and on your evaluation of others. This process will be overseen by the instructional staff, and scores may be overridden. The purpose of this peer-grading system is to give you a chance to see what goes into quality responses on the homework so that you can be best prepared for the exams. </p>
+<p><em>You should still complete the written problem assessment if you miss the corresponding written problem submission.</em></p>
 <hr />
 <h3 id="test-information">Test Information</h3>
 <h4 id="test-dates">Test Dates</h4>
+<p>Here are the test dates for this course; as soon as possible, please sign up for a suitable time with your proctor:</p>
 <ul>
-<li>Test 1: June 10 - 12, 2026</li>
-<li>Test 2: July 9 - 10, 2026</li>
-<li>Final Exam: August 3 - 4, 2026</li>
+<li>Test 1: Wednesday, June 17 - Thursday, June 18</li>
+<li>Test 2: Thursday, July 16 - Friday, July 17</li>
+<li>Test 3: Monday, August 3 - Tuesday, August 4</li>
 </ul>
 <h4 id="proctors">Proctors</h4>
 <p>All examinations will be proctored through DELTA. You will either take your exam with DELTA, or coordinate remote proctoring with DELTA, according to which situation best describes you:</p>
@@ -359,14 +362,6 @@ P. J. Olver and C. Shakiban: <a href="https://catalog.lib.ncsu.edu/catalog/NCSU4
 
 <p>You may reschedule an exam appointment directly with DELTA using the link above. You do not need to contact the instructor for permission, provided that your new appointment is scheduled within the exam's posted date range.</p>
 
-<h4 id="calculators">Calculators</h4>
-<p>You may use basic (four-function) calculators on exams. These calculators must have no calculus or graphing capabilities.</p>
-<p>There are descriptions and examples of calculators here: <a href="https://bmaults.github.io/course_syllabi/shared/calculator-guidelines.html">Calculator Guidelines</a>. If you are on-campus, you may rent a suitable calculator from the NC State Libraries: <a href="https://www.lib.ncsu.edu/devices/calculators">Calculator rentals at NC State Libraries</a>.</p>
-<h4 id="test-format">Test Format</h4>
-<p>Each exam will be a written, in-person exam administered at an approved testing location. You must bring appropriate photo identification and any permitted materials specified in this syllabus and in my course announcements.</p>
-<p>If you take the written exam at DELTA, then you will complete it on an iPad with an Apple Pencil.</p>
-<h4 id="regrading">Regrading</h4>
-<p>If a grading error is found after looking at the posted answer key then you should provide a written explanation of the error attached to the original test or submit a regrade request through Gradescope, to the instructor within 1 week. Do not alter the original work. The entire test may be re-graded and the test grade is subject to remain the same, increase or decrease at the discretion of the instructor. </p>
 <hr />
 <h3 id="classroom-expectations">Classroom Expectations</h3>
 <ol>
@@ -402,43 +397,8 @@ P. J. Olver and C. Shakiban: <a href="https://catalog.lib.ncsu.edu/catalog/NCSU4
 <p>I welcome any suggestions you have for making our classroom more welcoming.</p>
 <hr />
 <h3 id="grading">Grading</h3>
-<h4 id="grade-weighting-and-numerical-conversion">Grade Weighting and Numerical Conversion</h4>
-<p>Your grade will be determined by the following breakdown:</p>
-<ul>
-<li>Assignments: 40% </li>
-<li>Midterms: 30% (1.5 hour)</li>
-<li>Final: 30% (2.5 hour)</li>
-</ul>
-<p>Grades are tracked in real-time in the Moodle <strong>Gradebook</strong>.</p>
-<h4 id="conversion-from-numerical-grade-to-letter-grade">Conversion from Numerical Grade to Letter Grade</h4>
-<p>A student's numerical average will be converted to a letter grade as follows (do not expect any additional rounding, extra credit, or curves):</p>
-<div style="max-width:100%; overflow-x:auto;">
-  <table style="border-collapse:collapse; margin:0 auto; width:30%;">
-    <caption id="grade-range-caption">Standard Conversion Table</caption>
-    <thead>
-      <tr>
-        <th scope="col" style="padding:4px 8px; text-align:left; white-space:nowrap;">Grade</th>
-        <th scope="col" style="padding:4px 8px; text-align:left; white-space:nowrap;">Range</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">A+</td><td style="padding:4px 8px; white-space:nowrap;">97-100</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">A</td><td style="padding:4px 8px; white-space:nowrap;">93-96.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">A-</td><td style="padding:4px 8px; white-space:nowrap;">90-92.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">B+</td><td style="padding:4px 8px; white-space:nowrap;">87-89.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">B</td><td style="padding:4px 8px; white-space:nowrap;">83-86.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">B-</td><td style="padding:4px 8px; white-space:nowrap;">80-82.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">C+</td><td style="padding:4px 8px; white-space:nowrap;">77-79.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">C</td><td style="padding:4px 8px; white-space:nowrap;">73-76.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">C-</td><td style="padding:4px 8px; white-space:nowrap;">70-72.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">D+</td><td style="padding:4px 8px; white-space:nowrap;">67-69.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">D</td><td style="padding:4px 8px; white-space:nowrap;">63-66.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">D-</td><td style="padding:4px 8px; white-space:nowrap;">60-62.99</td></tr>
-      <tr><td style="padding:4px 8px; white-space:nowrap;">F</td><td style="padding:4px 8px; white-space:nowrap;">0-59</td></tr>
-    </tbody>
-  </table>
-</div>
-
+<p>Please see the <a href="https://webappprd.acs.ncsu.edu/php/coursecat/syllabus.php?strm=2268&amp;class_nbr=2303">Official Course Syllabus available in Class Search</a> for the detailed grading breakdown. This grading breakdown should align with the gradebook in Moodle; please contact your instructor if you spot a discrepancy.</p>
+<p>Note that by the end of the semester, grades will be calculated according to posted syllabus. So, if a grade item is incorrectly weighted at some point during the semester, please anticipate that this grade will be amended before the submission of final grades.</p>
 <h4 id="requirements-for-credit-only-su-grading">Requirements for Credit-Only (S/U) Grading</h4>
 <p>In order to receive a grade of S, students are required to take all exams, complete all assignments, and earn a grade of C- or better. Conversion from letter grading to credit only (S/U) grading is subject to university deadlines. Refer to the Registration and Records calendar for deadlines related to grading. For more details refer to <a href="https://policies.ncsu.edu/regulation/reg-02-20-15">REG 02.20.15 - Credit-Only Courses.</a></p>
 <p>It is the student's responsibility to check if an S grade gives progress towards their degree(s).</p>
@@ -449,34 +409,14 @@ P. J. Olver and C. Shakiban: <a href="https://catalog.lib.ncsu.edu/catalog/NCSU4
 <p>At the discretion of the instructor, students may be given an IN grade for work not completed because of a serious interruption in their work not caused by their own negligence. An IN must not be used, however, as a substitute for an F when the student's performance in the course is deserving of failing. An IN is only appropriate when the student's record in the course is such that the successful completion of particular assignments, projects, or tests missed as a result of a documented serious event would enable that student to pass the course.</p>
 <p>If an extended deadline is not authorized by the instructor or department, an unfinished incomplete grade will automatically change to an F after either (a) the end of the next regular semester in which the student is enrolled (not including summer sessions), or (b) the end of 12 months if the student is not enrolled, whichever is shorter. Incompletes that change to F will count as an attempted course on transcripts. The burden of fulfilling an incomplete grade is the responsibility of the student. See the university policy on incomplete grades: <a href="https://policies.ncsu.edu/regulation/reg-02-50-03">REG 02.50.03 - Grades and Grade Point Average.</a></p>
 <hr />
-<h3 id="course-schedule">Course Schedule</h3>
-<p>The course schedule is tentative and subject to change. Adjustments may be made to accommodate the pace of the class and unforeseen circumstances. All major changes will be announced in class and posted on Moodle.</p>
-<ul>
-<li>Course Calendar: <a href="https://bmaults.github.io/course_syllabi/MA523-601-calendar-summer.html">HTML</a></li>
-</ul>
-<h4 id="important-dates">Important Dates</h4>
-<p>For holidays and other university closures, please consult <a href="https://studentservices.ncsu.edu/calendars/academic/">the general NC State Academic Calendar.</a></p>
-<p>Your final exam schedule is already determined; find it here: <a href="https://studentservices.ncsu.edu/calendars/exam/">NC State Final Exam Calendar.</a> You are responsible for reviewing your final exam sessions to arrange a suitable time for this course.</p>
-<h4 id="list-of-topics">List of Topics</h4>
-<p>Here are the major topics of MA 523, with the approximate regular-semester time allocated to each:</p>
-<ul>
-<li><strong>Module 0: Introduction to Matlab and Computational Setup</strong> (~1 week). Major topics include Matlab onramp and basic Matlab usage.</li>
-<li><strong>Module 1: Vectors, Matrices, and Matrix Operations</strong> (~3 weeks). Major topics include vectors and matrices, basic matrix operations, matrix-vector products, matrix multiplication, inverses, and special matrices.</li>
-<li><strong>Module 2: Floating Point Arithmetic and Numerical Representation</strong> (~2 weeks). Major topics include toy floating point systems and IEEE double precision arithmetic.</li>
-<li><strong>Module 3: Linear Systems, Norms, and Conditioning</strong> (~2.5 weeks). Major topics include linear systems and sensitivity, vector and matrix norms, conditioning of linear systems, and numerical linear solvers.</li>
-<li><strong>Module 4: Singular Value Decomposition and Applications</strong> (~3 weeks). Major topics include foundations of the SVD, square and special matrices, rank, norms, optimality, distance from singularity, applications to statistics and PCA.</li>
-<li><strong>Module 5: Least Squares and Data Fitting</strong> (~1.5 weeks). Major topics include least squares problems, data fitting, column spaces, and regularization.</li>
-</ul>
-<h4 id="course-continuity">Course Continuity</h4>
-<p>To ensure course continuity, changes made to the method of instructional delivery, course structure, course schedule, number of assignments, grading or other aspects of the course after the start of the term will be communicated to all students in written form (e.g., by an instructor announcement) when course changes are implemented.</p>
-<hr />
 <h3 id="additional-information">Additional Information</h3>
-<h4 id="student-expenses">Student Expenses</h4>
 <h4 id="late-assignments">Late Assignments</h4>
 <p>Generally no late assignments are accepted in this course. Please plan your work carefully and submit assignments by their stated deadlines. Extensions may be occasionally granted by the instructor for extenuating circumstances, which are best documented with <a href="https://osla.dasa.ncsu.edu/absence-verification-process/">NC State Absence Verification.</a></p>
 <p>For longer-term, recurring, or more serious illness or other interruptions to your participation in this class, you should reach out to your instructor as soon as you can.</p>
 <h4 id="late-examinations">Late Examinations</h4>
-<p>There are no make-up exams in this course.</p>
+<p><em>Excused absense.</em> If an exam is missed with an excused absence (that is, for a university-approved reason with supporting documentation), then a make-up test will be scheduled individually. The make-up test may contain different questions and be assessed differently than the regular test. Documentation for an excused absence must be provided within 1 week of the missed class. All absences that require a make-up exam or other special accommodations must go through the NC State University absence verification process. Here is the link to that office: <a href="https://osla.dasa.ncsu.edu/absence-verification-process/">NC State Absence Verification.</a></p>
+<p><em>Failure to schedule.</em> You must schedule exams in a timely fashion to guarantee that you will be able to take them. It is the instructor’s discretion whether a make-up exam will be allowed if you are not able to schedule an exam appointment within the selected time frame. If the instructor approves a make-up exam, there may be a 10% penalty on that exam. The make-up test may contain different questions and be assessed differently than the regular test.</p>
+<p><em>Other absences.</em> If an exam is missed for an unexcused absence, that exam will be given a score of 0.</p>
 <h4 id="attendance">Attendance</h4>
 <p>Since this course is an asynchronous online course, there is no daily attendance. Instead, each student's participation in Moodle is tracked to check for regular activity. For complete attendance and excused absence policies, please see Attendance Regulations (<a href="http://policies.ncsu.edu/regulation/reg-02-20-03">NCSU REG 02.20.03</a>).</p>
 <h4 id="academic-integrity">Academic Integrity</h4>
@@ -487,8 +427,6 @@ P. J. Olver and C. Shakiban: <a href="https://catalog.lib.ncsu.edu/catalog/NCSU4
 <li>Homework: You may consult your notes, the textbook, each other, or online resources.</li>
 <li>Forum discussion boards: You are encouraged to discuss mathematical concepts and problems with your classmates. However, you must arrive at your own solutions with your own work. Do not seek nor state final answers on the forum; focus on understanding the concepts.</li>
 </ul>
-<p><strong>Artifical Intelligence</strong></p>
-<p>You are not allowed to use any artificial intelligence (AI) tools, such as chatbots, text generators, paraphrasers, summarizers, or solvers, to complete any part of your assignments. Any attempt to use these tools will be considered academic misconduct and will be dealt with according to the university’s academic integrity policy. You are expected to complete all work independently and without the assistance of AI-generated content. If you have questions about what constitutes acceptable use of AI tools, please consult with the instructor before submitting your work.</p>
 <h4 id="disability-resources">Disability Resources</h4>
 <p>Reasonable accommodations will be made for students with verifiable disabilities. In order to take advantage of available accommodations, students must register with the Disability Resource Office at Holmes Hall, Suite 304, 2751 Cates Avenue, Campus Box 7509, 919-515-7653. For more information on NC State's policy on working with students with disabilities, please see the Academic Accommodations for Students with Disabilities Regulation (<a href="https://policies.ncsu.edu/regulation/reg-02-20-01/">NCSU REG 02.20.01</a>).</p>
 <p>Students who receive accommodations are responsible for filing those accommodations officially with DRO before the tests occur. It is not appropriate to tell the instructor that you should receive accommodations without going through the official channels. The instructor will only adjust test conditions after receiving the official Accommodation Letter Notification from DRO. Adjustments are never made retroactively to past examinations.</p>
@@ -518,14 +456,6 @@ P. J. Olver and C. Shakiban: <a href="https://catalog.lib.ncsu.edu/catalog/NCSU4
 </ul>
 </li>
 <li>
-<a href="https://piazza.com">Piazza</a>: this site hosts our class forum. You will use <strong>Piazza</strong> to ask questions regarding the lecture or homework.
-<ul>
-<li><a href="https://piazza.com/product/accessibility">Piazza Accessibility Statement</a></li>
-<li><a href="https://piazza.com/legal/privacy">Piazza Privacy Policy</a></li>
-<li><a href="https://support.piazza.com/support/home">Piazza Support Center</a></li>
-</ul>
-</li>
-<li>
 <a href="https://meet.google.com">Google Meet</a>: when needed.
 <ul>
 <li><a href="https://support.google.com/meet/answer/7313544?hl=en">Google Meet Accessibility features</a></li>
@@ -539,22 +469,6 @@ P. J. Olver and C. Shakiban: <a href="https://catalog.lib.ncsu.edu/catalog/NCSU4
 <li><a href="https://www.zoom.com/en/accessibility/">Zoom Accessibility Statement</a></li>
 <li><a href="https://www.zoom.com/en/trust/privacy/privacy-statement/">Zoom Privacy Policy</a></li>
 <li><a href="https://support.zoom.com/hc">Zoom Support</a></li>
-</ul>
-</li>
-<li>
-<a href="https://www.gradescope.com/">Gradescope</a>: We will use Gradescope for collecting and returning written work.
-<ul>
-<li><a href="https://help.gradescope.com/article/w73ayv69kf-gradescope-accessibility-information-and-resources">Gradescope Accessibility Information</a></li>
-<li><a href="https://www.gradescope.com/privacy">Gradescope Privacy Policy</a></li>
-<li><a href="https://help.gradescope.com/">Gradescope Help Center</a></li>
-</ul>
-</li>
-<li>
-<a href="https://www.mathworks.com/">MathWorks</a>: We will use MathWorks MATLAB for programming assignments.
-<ul>
-<li><a href="https://www.mathworks.com/help/matlab/matlab_env/accessibility-in-matlab.html">MATLAB Accessibility Statement</a></li>
-<li><a href="https://www.mathworks.com/company/trust-center/privacy-policy.html">MATLAB Privacy Policy</a></li>
-<li><a href="https://www.mathworks.com/support/contact_us.html">MATLAB Support</a></li>
 </ul>
 </li>
 </ul>
